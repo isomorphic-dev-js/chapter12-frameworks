@@ -1,12 +1,19 @@
 // src/app.server.module.ts
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { ServerModule } from '@angular/platform-server';
+import { ServerPrebootModule } from 'preboot/server';
 import { AppComponent } from './app/app.component';
-import { AppModule } from './app/app.module';
+
 @NgModule({
   imports: [
     ServerModule,
-    AppModule
+    BrowserModule.withServerTransition({
+      appId: 'ng-universal-example'
+    }),
+    ServerPrebootModule.recordEvents({
+      appRoot: 'app-root'
+    })
   ],
   bootstrap: [
     AppComponent

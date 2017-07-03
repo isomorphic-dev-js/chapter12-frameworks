@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "./dist/ngfactory",
+    "entryModule": "./src/app/app.module#AppModule"
+  }
+}
