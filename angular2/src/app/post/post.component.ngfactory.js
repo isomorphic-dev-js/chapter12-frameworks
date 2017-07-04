@@ -6,86 +6,38 @@
  */
 /* tslint:disable */
 exports.__esModule = true;
-var import0 = require("./post.component.css.shim.ngstyle");
-var import1 = require("@angular/core");
-var import2 = require("./post.component");
-var styles_PostComponent = [import0.styles];
-exports.RenderType_PostComponent = import1.ɵcrt({
-    encapsulation: 0,
-    styles: styles_PostComponent,
-    data: {}
-});
-function View_PostComponent_0(l) {
-    return import1.ɵvid(0, [
-        (l()(), import1.ɵeld(0, null, null, 18, 'div', [[
-                'class',
-                'item'
-            ]
-        ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵeld(0, null, null, 3, 'div', [[
-                'class',
-                'ui tiny image'
-            ]
-        ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵeld(0, null, null, 0, 'img', [], [[
-                8,
-                'src',
-                4
-            ]
-        ], null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵeld(0, null, null, 10, 'div', [[
-                'class',
-                'content'
-            ]
-        ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵeld(0, null, null, 1, 'div', [[
-                'class',
-                'header'
-            ]
-        ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, [
-            '',
-            ''
-        ])),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵeld(0, null, null, 4, 'div', [[
-                'class',
-                'description'
-            ]
-        ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n      '])),
-        (l()(), import1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, [
-            '',
-            ''
-        ])),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵted(null, ['\n'])),
-        (l()(), import1.ɵted(null, ['\n']))
-    ], null, function (ck, v) {
-        var co = v.component;
-        var currVal_0 = import1.ɵinlineInterpolate(1, '', co.post.image, '');
-        ck(v, 4, 0, currVal_0);
-        var currVal_1 = co.post.title;
-        ck(v, 10, 0, currVal_1);
-        var currVal_2 = co.post.body.slice(0, (co.limit ? co.limit : co.post.body.length));
-        ck(v, 15, 0, currVal_2);
+var i0 = require("./post.component.css.shim.ngstyle");
+var i1 = require("@angular/core");
+var i2 = require("./post.component");
+var styles_PostComponent = [i0.styles];
+exports.RenderType_PostComponent = i1.ɵcrt({ encapsulation: 0,
+    styles: styles_PostComponent, data: {} });
+function View_PostComponent_0(_l) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 18, 'div', [['class',
+                'item']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, null, null, 3, 'div', [['class', 'ui tiny image']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])),
+        (_l()(), i1.ɵeld(0, null, null, 0, 'img', [], [[8, 'src',
+                4]], null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵeld(0, null, null, 10, 'div', [['class', 'content']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'div', [['class',
+                'header']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['', ''])), (_l()(), i1.ɵted(null, ['\n    '])),
+        (_l()(), i1.ɵeld(0, null, null, 4, 'div', [['class', 'description']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 1, 'p', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['', ''])), (_l()(),
+            i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n']))], null, function (_ck, _v) {
+        var _co = _v.component;
+        var currVal_0 = i1.ɵinlineInterpolate(1, '', _co.post.image, '');
+        _ck(_v, 4, 0, currVal_0);
+        var currVal_1 = _co.post.title;
+        _ck(_v, 10, 0, currVal_1);
+        var currVal_2 = _co.post.body.slice(0, (_co.limit ? _co.limit : _co.post.body.length));
+        _ck(_v, 15, 0, currVal_2);
     });
 }
 exports.View_PostComponent_0 = View_PostComponent_0;
-function View_PostComponent_Host_0(l) {
-    return import1.ɵvid(0, [
-        (l()(), import1.ɵeld(0, null, null, 1, 'app-post', [], null, null, null, View_PostComponent_0, exports.RenderType_PostComponent)),
-        import1.ɵdid(114688, null, 0, import2.PostComponent, [], null, null)
-    ], function (ck, v) {
-        ck(v, 1, 0);
-    }, null);
+function View_PostComponent_Host_0(_l) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-post', [], null, null, null, View_PostComponent_0, exports.RenderType_PostComponent)),
+        i1.ɵdid(49152, null, 0, i2.PostComponent, [], null, null)], null, null);
 }
-exports.PostComponentNgFactory = import1.ɵccf('app-post', import2.PostComponent, View_PostComponent_Host_0, { post: 'post' }, {}, []);
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9wb3N0L3Bvc3QuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9wb3N0L3Bvc3QuY29tcG9uZW50LnRzIiwibmc6Ly8vVXNlcnMvZWx5c2Vrb2xrZXIvZGV2L3BlcnNvbmFsL2NoYXB0ZXItMTItZnJhbWV3b3Jrcy9hbmd1bGFyMi9zcmMvYXBwL3Bvc3QvcG9zdC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9wb3N0L3Bvc3QuY29tcG9uZW50LnRzLlBvc3RDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGNsYXNzPVwiaXRlbVwiPlxuICA8ZGl2IGNsYXNzPVwidWkgdGlueSBpbWFnZVwiPlxuICAgIDxpbWcgc3JjPXt7cG9zdC5pbWFnZX19IC8+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwiY29udGVudFwiPlxuICAgIDxkaXYgY2xhc3M9XCJoZWFkZXJcIj57e3Bvc3QudGl0bGV9fTwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJkZXNjcmlwdGlvblwiPlxuICAgICAgPHA+e3twb3N0LmJvZHkuc2xpY2UoMCwgbGltaXQgPyBsaW1pdCA6IHBvc3QuYm9keS5sZW5ndGgpfX08L3A+XG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuPC9kaXY+XG4iLCI8YXBwLXBvc3Q+PC9hcHAtcG9zdD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztNQ0FBO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBa0I7TUFDaEI7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUEyQjtNQUN6QjtRQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBMEI7SUFDdEI7TUFDTjtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXFCO01BQ25CO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBb0I7TUFBQTtNQUFBO0lBQUE7SUFBQTtJQUFvQjtNQUN4QztRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXlCO0lBQ3ZCO0lBQUc7TUFBQTtNQUFBO0lBQUE7SUFBQTtJQUE0RDtJQUMzRDtJQUNGO0lBQ0Y7Ozs7SUFSRztJQUFMLFNBQUssU0FBTDtJQUdvQjtJQUFBO0lBRWY7SUFBQTs7Ozs7SUNQVDtnQkFBQTs7O0lBQUE7OzsifQ==
+exports.View_PostComponent_Host_0 = View_PostComponent_Host_0;
+exports.PostComponentNgFactory = i1.ɵccf('app-post', i2.PostComponent, View_PostComponent_Host_0, { post: 'post' }, {}, []);
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9wb3N0L3Bvc3QuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9wb3N0L3Bvc3QuY29tcG9uZW50LnRzIiwibmc6Ly8vVXNlcnMvZWx5c2Vrb2xrZXIvZGV2L3BlcnNvbmFsL2NoYXB0ZXItMTItZnJhbWV3b3Jrcy9hbmd1bGFyMi9zcmMvYXBwL3Bvc3QvcG9zdC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9wb3N0L3Bvc3QuY29tcG9uZW50LnRzLlBvc3RDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGNsYXNzPVwiaXRlbVwiPlxuICA8ZGl2IGNsYXNzPVwidWkgdGlueSBpbWFnZVwiPlxuICAgIDxpbWcgc3JjPXt7cG9zdC5pbWFnZX19IC8+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwiY29udGVudFwiPlxuICAgIDxkaXYgY2xhc3M9XCJoZWFkZXJcIj57e3Bvc3QudGl0bGV9fTwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJkZXNjcmlwdGlvblwiPlxuICAgICAgPHA+e3twb3N0LmJvZHkuc2xpY2UoMCwgbGltaXQgPyBsaW1pdCA6IHBvc3QuYm9keS5sZW5ndGgpfX08L3A+XG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuPC9kaXY+XG4iLCI8YXBwLXBvc3Q+PC9hcHAtcG9zdD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTtNQUFrQix5Q0FDaEI7VUFBQTtVQUFBLDhCQUEyQjtNQUN6QjtVQUFBLDhEQUEwQjtVQUFBLFdBQ3RCLHlDQUNOO1VBQUE7VUFBQSw0Q0FBcUI7VUFBQSxhQUNuQjtVQUFBO01BQW9CLHdDQUFvQjtNQUN4QztVQUFBO01BQXlCLDZDQUN2QjtVQUFBO1VBQUEsOEJBQUcsd0NBQTREO2lCQUFBLDRCQUMzRDtNQUNGLHVDQUNGOzs7UUFSRztRQUFMLFdBQUssU0FBTDtRQUdvQjtRQUFBO1FBRWY7UUFBQTs7OztvQkNQVDtNQUFBO2FBQUE7Ozs7In0=

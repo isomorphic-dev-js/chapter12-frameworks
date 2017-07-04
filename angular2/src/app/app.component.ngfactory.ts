@@ -6,94 +6,49 @@
  /* tslint:disable */
 
 
-import * as import0 from './app.component.css.shim.ngstyle';
-import * as import1 from '@angular/core';
-import * as import2 from './post/post.component.ngfactory';
-import * as import3 from './post/post.component';
-import * as import4 from './app.component';
-const styles_AppComponent:any[] = [import0.styles];
-export const RenderType_AppComponent:import1.RendererType2 = import1.ɵcrt({
-  encapsulation: 0,
-  styles: styles_AppComponent,
-  data: {}
-}
-);
-export function View_AppComponent_0(l:any):import1.ɵViewDefinition {
-  return import1.ɵvid(0,[
-    (l()(),import1.ɵted((null as any),['\n'])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),15,'div',[[
-        'class',
-        'ui borderless main menu'
-      ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n  '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),12,'div',[[
-        'class',
-        'ui text container'
-      ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),4,'div',[[
-        'class',
-        'header item'
-      ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n      '])),
-    (l()(),import1.ɵeld(0,(null as any),(null as any),0,'img',[
-      [
-        'class',
-        'logo'
-      ]
-      ,
-      [
-        'src',
-        'http://placehold.it/64x64'
-      ]
-
-    ]
-    ,(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n      '])),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),1,'a',[[
-        'class',
-        'item'
-      ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['Posts'])),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-    (l()(),import1.ɵted((null as any),['\n  '])),
-    (l()(),import1.ɵted((null as any),['\n'])),
-    (l()(),import1.ɵted((null as any),['\n'])),
-    (l()(),import1.ɵeld(0,(null as any),(null as any),9,'div',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n  '])),
-    (l()(),import1.ɵted((null as any),['\n      '])),
-    (l()(),import1.ɵted((null as any),['\n      '])),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-    (l()(),import1.ɵted((null as any),['\n  '])),
-    (l()(),import1.ɵted((null as any),['\n  '])),
-    (l()(),import1.ɵeld(0,(null as any),(null as any),1,'app-post',([] as any[]),(null as any),(null as any),(null as any),import2.View_PostComponent_0,import2.RenderType_PostComponent)),
-      import1.ɵdid(114688,(null as any),0,import3.PostComponent,([] as any[]),{post: [
-        0,
-        'post'
-      ]
-    },(null as any)),
-    (l()(),import1.ɵted((null as any),['\n'])),
-    (l()(),import1.ɵted((null as any),['\n\n']))
-  ]
-  ,(ck,v) => {
-    var co:import4.AppComponent = v.component;
-    const currVal_0:any = co.myPost;
-    ck(v,26,0,currVal_0);
+import * as i0 from './app.component.css.shim.ngstyle';
+import * as i1 from '@angular/core';
+import * as i2 from './posts-list/posts-list.component.ngfactory';
+import * as i3 from './posts-list/posts-list.component';
+import * as i4 from './services/posts.service';
+import * as i5 from './app.component';
+const styles_AppComponent:any[] = [i0.styles];
+export const RenderType_AppComponent:i1.RendererType2 = i1.ɵcrt({encapsulation:0,styles:styles_AppComponent,
+    data:{}});
+export function View_AppComponent_0(_l:any):i1.ɵViewDefinition {
+  return i1.ɵvid(0,[(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵeld(0,(null as any),
+      (null as any),15,'div',[['class','ui borderless main menu']],(null as any),(null as any),
+      (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),12,'div',[['class','ui text container']],
+          (null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          4,'div',[['class','header item']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
+      (_l()(),i1.ɵeld(0,(null as any),(null as any),0,'img',[['class','logo'],['src',
+          'http://placehold.it/64x64']],(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n      '])),
+      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),['\n    '])),
+      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          1,'a',[['class','item']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['Posts'])),(_l()(),i1.ɵted((null as any),
+          ['\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵted((null as any),
+          ['\n'])),(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),4,'div',([] as any[]),(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),
+          i1.ɵeld(0,(null as any),(null as any),1,'app-posts-list',([] as any[]),(null as any),
+              (null as any),(null as any),i2.View_PostsListComponent_0,i2.RenderType_PostsListComponent)),
+      i1.ɵdid(245760,(null as any),0,i3.PostsListComponent,[i4.PostsService],(null as any),
+          (null as any)),(_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵted((null as any),
+          ['\n\n']))],(_ck,_v) => {
+    _ck(_v,21,0);
   },(null as any));
 }
-function View_AppComponent_Host_0(l:any):import1.ɵViewDefinition {
-  return import1.ɵvid(0,[
-    (l()(),import1.ɵeld(0,(null as any),(null as any),1,'app-root',([] as any[]),(null as any),(null as any),(null as any),View_AppComponent_0,RenderType_AppComponent)),
-    import1.ɵdid(49152,(null as any),0,import4.AppComponent,([] as any[]),(null as any),(null as any))
-  ]
-  ,(null as any),(null as any));
+export function View_AppComponent_Host_0(_l:any):i1.ɵViewDefinition {
+  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'app-root',([] as any[]),
+      (null as any),(null as any),(null as any),View_AppComponent_0,RenderType_AppComponent)),
+      i1.ɵdid(49152,(null as any),0,i5.AppComponent,([] as any[]),(null as any),(null as any))],
+      (null as any),(null as any));
 }
-export const AppComponentNgFactory:import1.ComponentFactory<import4.AppComponent> = import1.ɵccf('app-root',import4.AppComponent,View_AppComponent_Host_0,{},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzIiwibmc6Ly8vVXNlcnMvZWx5c2Vrb2xrZXIvZGV2L3BlcnNvbmFsL2NoYXB0ZXItMTItZnJhbWV3b3Jrcy9hbmd1bGFyMi9zcmMvYXBwL2FwcC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzLkFwcENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjwhLS1UaGUgd2hvbGUgY29udGVudCBiZWxvdyBjYW4gYmUgcmVtb3ZlZCB3aXRoIHRoZSBuZXcgY29kZS4tLT5cbjxkaXYgY2xhc3M9XCJ1aSBib3JkZXJsZXNzIG1haW4gbWVudVwiPlxuICA8ZGl2IGNsYXNzPVwidWkgdGV4dCBjb250YWluZXJcIj5cbiAgICA8ZGl2IGNsYXNzPVwiaGVhZGVyIGl0ZW1cIj5cbiAgICAgIDxpbWcgY2xhc3M9XCJsb2dvXCIgc3JjPVwiaHR0cDovL3BsYWNlaG9sZC5pdC82NHg2NFwiIC8+XG4gICAgICA8IS0tPHNwYW4gc3R5bGU9e3t7cGFkZGluZ0xlZnQ6IFwiMXJlbVwifX19PlNhbXBsZSBCbG9nPC9zcGFuPi0tPlxuICAgIDwvZGl2PlxuICAgIDwhLS08TGluayBwcmVmZXRjaCBocmVmPVwiL1wiPi0tPlxuICAgIDxhIGNsYXNzPVwiaXRlbVwiPlBvc3RzPC9hPlxuICAgIDwhLS08L0xpbms+LS0+XG4gIDwvZGl2PlxuPC9kaXY+XG48ZGl2PlxuICA8IS0tPGRpdiAqbmdGb3I9XCJsZXQgaGVybyBvZiBoZXJvZXNcIi0tPlxuICAgICAgPCEtLVtjbGFzcy5zZWxlY3RlZF09XCJoZXJvID09PSBzZWxlY3RlZEhlcm9cIi0tPlxuICAgICAgPCEtLShjbGljayk9XCJvblNlbGVjdChoZXJvKVwiPi0tPlxuICAgIDwhLS08c3BhbiBjbGFzcz1cImJhZGdlXCI+e3toZXJvLmlkfX08L3NwYW4+IHt7aGVyby5uYW1lfX0tLT5cbiAgPCEtLTwvZGl2Pi0tPlxuICA8YXBwLXBvc3QgW3Bvc3RdPVwibXlQb3N0XCI+PC9hcHAtcG9zdD5cbjwvZGl2PlxuXG4iLCI8YXBwLXJvb3Q+PC9hcHAtcm9vdD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lDQWdFO01BQ2hFO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBcUM7TUFDbkM7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUErQjtNQUM3QjtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXlCO0lBQ3ZCO01BQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtJQUFvRDtJQUNXO0lBQzNEO0lBQ3lCO01BQy9CO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBZ0I7SUFBUztJQUNYO0lBQ1Y7SUFDRjtJQUNOO0lBQUs7SUFDb0M7SUFDWTtJQUNmO0lBQ3lCO0lBQ2hEO0lBQ2I7a0JBQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUFxQztJQUNqQzs7OztJQURNO0lBQVYsVUFBVSxTQUFWOzs7OztJQ2xCRjtnQkFBQTs7OzsifQ==
+export const AppComponentNgFactory:i1.ComponentFactory<i5.AppComponent> = i1.ɵccf('app-root',
+    i5.AppComponent,View_AppComponent_Host_0,{},{},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzIiwibmc6Ly8vVXNlcnMvZWx5c2Vrb2xrZXIvZGV2L3BlcnNvbmFsL2NoYXB0ZXItMTItZnJhbWV3b3Jrcy9hbmd1bGFyMi9zcmMvYXBwL2FwcC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzLkFwcENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjwhLS1UaGUgd2hvbGUgY29udGVudCBiZWxvdyBjYW4gYmUgcmVtb3ZlZCB3aXRoIHRoZSBuZXcgY29kZS4tLT5cbjxkaXYgY2xhc3M9XCJ1aSBib3JkZXJsZXNzIG1haW4gbWVudVwiPlxuICA8ZGl2IGNsYXNzPVwidWkgdGV4dCBjb250YWluZXJcIj5cbiAgICA8ZGl2IGNsYXNzPVwiaGVhZGVyIGl0ZW1cIj5cbiAgICAgIDxpbWcgY2xhc3M9XCJsb2dvXCIgc3JjPVwiaHR0cDovL3BsYWNlaG9sZC5pdC82NHg2NFwiIC8+XG4gICAgICA8IS0tPHNwYW4gc3R5bGU9e3t7cGFkZGluZ0xlZnQ6IFwiMXJlbVwifX19PlNhbXBsZSBCbG9nPC9zcGFuPi0tPlxuICAgIDwvZGl2PlxuICAgIDwhLS08TGluayBwcmVmZXRjaCBocmVmPVwiL1wiPi0tPlxuICAgIDxhIGNsYXNzPVwiaXRlbVwiPlBvc3RzPC9hPlxuICAgIDwhLS08L0xpbms+LS0+XG4gIDwvZGl2PlxuPC9kaXY+XG48ZGl2PlxuICA8YXBwLXBvc3RzLWxpc3Q+PC9hcHAtcG9zdHMtbGlzdD5cbjwvZGl2PlxuXG4iLCI8YXBwLXJvb3Q+PC9hcHAtcm9vdD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQWdFLHVDQUNoRTtNQUFBO01BQUEsNENBQXFDO01BQ25DO1VBQUE7TUFBK0IsMkNBQzdCO1VBQUE7VUFBQSw4QkFBeUI7TUFDdkI7VUFBQTtVQUFBLDhCQUFvRDtNQUNXLDJDQUMzRDtNQUN5QiwyQ0FDL0I7VUFBQTtVQUFBLGdCQUFnQiwwQ0FBUztVQUFBLGFBQ1gseUNBQ1Y7VUFBQSxTQUNGLHVDQUNOO1VBQUE7VUFBQSw4QkFBSyx5Q0FDSDtpQkFBQTtjQUFBO2FBQUE7VUFBQSxlQUFpQyx1Q0FDN0I7VUFBQTtJQURKOzs7O29CQ2JGO01BQUE7YUFBQTs7OzsifQ==

@@ -8,9 +8,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 var core_1 = require("@angular/core");
 var PostsListComponent = (function () {
-    function PostsListComponent() {
+    function PostsListComponent(postsService) {
+        this.postsService = postsService;
+        this.posts = [];
     }
     PostsListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var postsSub = this.postsService.getPosts();
+        this.subscription = postsSub.subscribe(function (posts) {
+            _this.posts = posts;
+            console.log("posts", _this.posts);
+        });
+    };
+    PostsListComponent.prototype.ngOnDestroy = function () {
+        this.subscription.unsubscribe();
     };
     return PostsListComponent;
 }());

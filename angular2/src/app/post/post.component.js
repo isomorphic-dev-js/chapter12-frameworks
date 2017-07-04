@@ -10,8 +10,6 @@ var core_1 = require("@angular/core");
 var PostComponent = (function () {
     function PostComponent() {
     }
-    PostComponent.prototype.ngOnInit = function () {
-    };
     return PostComponent;
 }());
 __decorate([

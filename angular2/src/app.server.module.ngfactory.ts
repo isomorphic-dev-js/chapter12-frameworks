@@ -6,250 +6,83 @@
  /* tslint:disable */
 
 
-import * as import0 from '@angular/core';
-import * as import1 from './app.server.module';
-import * as import2 from '@angular/http';
-import * as import3 from '@angular/common';
-import * as import4 from '@angular/platform-browser';
-import * as import5 from '@angular/platform-browser/animations';
-import * as import6 from '@angular/platform-server';
-import * as import7 from 'preboot/src/server/server-preboot.module';
-import * as import8 from '@angular/animations/browser';
-import * as import9 from './app/app.component.ngfactory';
-class AppServerModuleInjector extends import0.ɵNgModuleInjector<import1.AppServerModule> {
-  _HttpModule_0:import2.HttpModule;
-  _CommonModule_1:import3.CommonModule;
-  _ErrorHandler_2:any;
-  _APP_ID_3:any;
-  _ɵTRANSITION_ID_4:any;
-  _APP_INITIALIZER_5:any[];
-  _ApplicationInitStatus_6:import0.ApplicationInitStatus;
-  _ɵf_7:import0.ɵf;
-  _ApplicationRef_8:any;
-  _ApplicationModule_9:import0.ApplicationModule;
-  _BrowserModule_10:import4.BrowserModule;
-  _NoopAnimationsModule_11:import5.NoopAnimationsModule;
-  _ServerModule_12:import6.ServerModule;
-  _ServerPrebootModule_13:import7.ServerPrebootModule;
-  _AppServerModule_14:import1.AppServerModule;
-  __BrowserXhr_15:import6.ɵc;
-  __ResponseOptions_16:import2.BaseResponseOptions;
-  __XSRFStrategy_17:import6.ɵd;
-  __XHRBackend_18:import2.XHRBackend;
-  __RequestOptions_19:import2.BaseRequestOptions;
-  __Http_20:any;
-  __LOCALE_ID_21:any;
-  __NgLocalization_22:import3.NgLocaleLocalization;
-  __Compiler_23:import0.Compiler;
-  __IterableDiffers_24:any;
-  __KeyValueDiffers_25:any;
-  __DomSanitizer_26:import4.ɵe;
-  __Sanitizer_27:any;
-  __HAMMER_GESTURE_CONFIG_28:import4.HammerGestureConfig;
-  __EVENT_MANAGER_PLUGINS_29:any[];
-  __EventManager_30:import4.EventManager;
-  __ɵDomSharedStylesHost_31:import4.ɵDomSharedStylesHost;
-  __ɵDomRendererFactory2_32:import4.ɵDomRendererFactory2;
-  __ɵb_33:import6.ɵb;
-  __ɵSharedStylesHost_34:any;
-  __ɵServerRendererFactory2_35:import6.ɵServerRendererFactory2;
-  __ɵAnimationEngine_36:import8.ɵNoopAnimationEngine;
-  __RendererFactory2_37:any;
-  __Testability_38:any;
-  __Meta_39:import4.Meta;
-  __Title_40:import4.Title;
-  _PREBOOT_RECORD_OPTIONS_41:any;
-  __APP_BOOTSTRAP_LISTENER_42:any[];
-  constructor(parent:import0.Injector) {
-    super(parent,[import9.AppComponentNgFactory],[import9.AppComponentNgFactory]);
-  }
-  get _BrowserXhr_15():import6.ɵc {
-    if ((this.__BrowserXhr_15 == null)) { (this.__BrowserXhr_15 = new import6.ɵc()); }
-    return this.__BrowserXhr_15;
-  }
-  get _ResponseOptions_16():import2.BaseResponseOptions {
-    if ((this.__ResponseOptions_16 == null)) { (this.__ResponseOptions_16 = new import2.BaseResponseOptions()); }
-    return this.__ResponseOptions_16;
-  }
-  get _XSRFStrategy_17():import6.ɵd {
-    if ((this.__XSRFStrategy_17 == null)) { (this.__XSRFStrategy_17 = new import6.ɵd()); }
-    return this.__XSRFStrategy_17;
-  }
-  get _XHRBackend_18():import2.XHRBackend {
-    if ((this.__XHRBackend_18 == null)) { (this.__XHRBackend_18 = new import2.XHRBackend(this._BrowserXhr_15,this._ResponseOptions_16,this._XSRFStrategy_17)); }
-    return this.__XHRBackend_18;
-  }
-  get _RequestOptions_19():import2.BaseRequestOptions {
-    if ((this.__RequestOptions_19 == null)) { (this.__RequestOptions_19 = new import2.BaseRequestOptions()); }
-    return this.__RequestOptions_19;
-  }
-  get _Http_20():any {
-    if ((this.__Http_20 == null)) { (this.__Http_20 = import6.ɵe(this._XHRBackend_18,this._RequestOptions_19)); }
-    return this.__Http_20;
-  }
-  get _LOCALE_ID_21():any {
-    if ((this.__LOCALE_ID_21 == null)) { (this.__LOCALE_ID_21 = import0.ɵn(this.parent.get(import0.LOCALE_ID,(null as any)))); }
-    return this.__LOCALE_ID_21;
-  }
-  get _NgLocalization_22():import3.NgLocaleLocalization {
-    if ((this.__NgLocalization_22 == null)) { (this.__NgLocalization_22 = new import3.NgLocaleLocalization(this._LOCALE_ID_21)); }
-    return this.__NgLocalization_22;
-  }
-  get _Compiler_23():import0.Compiler {
-    if ((this.__Compiler_23 == null)) { (this.__Compiler_23 = new import0.Compiler()); }
-    return this.__Compiler_23;
-  }
-  get _IterableDiffers_24():any {
-    if ((this.__IterableDiffers_24 == null)) { (this.__IterableDiffers_24 = import0.ɵl()); }
-    return this.__IterableDiffers_24;
-  }
-  get _KeyValueDiffers_25():any {
-    if ((this.__KeyValueDiffers_25 == null)) { (this.__KeyValueDiffers_25 = import0.ɵm()); }
-    return this.__KeyValueDiffers_25;
-  }
-  get _DomSanitizer_26():import4.ɵe {
-    if ((this.__DomSanitizer_26 == null)) { (this.__DomSanitizer_26 = new import4.ɵe(this.parent.get(import4.DOCUMENT))); }
-    return this.__DomSanitizer_26;
-  }
-  get _Sanitizer_27():any {
-    if ((this.__Sanitizer_27 == null)) { (this.__Sanitizer_27 = this._DomSanitizer_26); }
-    return this.__Sanitizer_27;
-  }
-  get _HAMMER_GESTURE_CONFIG_28():import4.HammerGestureConfig {
-    if ((this.__HAMMER_GESTURE_CONFIG_28 == null)) { (this.__HAMMER_GESTURE_CONFIG_28 = new import4.HammerGestureConfig()); }
-    return this.__HAMMER_GESTURE_CONFIG_28;
-  }
-  get _EVENT_MANAGER_PLUGINS_29():any[] {
-    if ((this.__EVENT_MANAGER_PLUGINS_29 == null)) { (this.__EVENT_MANAGER_PLUGINS_29 = [
-      new import4.ɵDomEventsPlugin(this.parent.get(import4.DOCUMENT)),
-      new import4.ɵKeyEventsPlugin(this.parent.get(import4.DOCUMENT)),
-      new import4.ɵHammerGesturesPlugin(this.parent.get(import4.DOCUMENT),this._HAMMER_GESTURE_CONFIG_28)
-    ]
-    ); }
-    return this.__EVENT_MANAGER_PLUGINS_29;
-  }
-  get _EventManager_30():import4.EventManager {
-    if ((this.__EventManager_30 == null)) { (this.__EventManager_30 = new import4.EventManager(this._EVENT_MANAGER_PLUGINS_29,this.parent.get(import0.NgZone))); }
-    return this.__EventManager_30;
-  }
-  get _ɵDomSharedStylesHost_31():import4.ɵDomSharedStylesHost {
-    if ((this.__ɵDomSharedStylesHost_31 == null)) { (this.__ɵDomSharedStylesHost_31 = new import4.ɵDomSharedStylesHost(this.parent.get(import4.DOCUMENT))); }
-    return this.__ɵDomSharedStylesHost_31;
-  }
-  get _ɵDomRendererFactory2_32():import4.ɵDomRendererFactory2 {
-    if ((this.__ɵDomRendererFactory2_32 == null)) { (this.__ɵDomRendererFactory2_32 = new import4.ɵDomRendererFactory2(this._EventManager_30,this._ɵDomSharedStylesHost_31)); }
-    return this.__ɵDomRendererFactory2_32;
-  }
-  get _ɵb_33():import6.ɵb {
-    if ((this.__ɵb_33 == null)) { (this.__ɵb_33 = new import6.ɵb(this.parent.get(import4.DOCUMENT),this._ɵTRANSITION_ID_4)); }
-    return this.__ɵb_33;
-  }
-  get _ɵSharedStylesHost_34():any {
-    if ((this.__ɵSharedStylesHost_34 == null)) { (this.__ɵSharedStylesHost_34 = this._ɵb_33); }
-    return this.__ɵSharedStylesHost_34;
-  }
-  get _ɵServerRendererFactory2_35():import6.ɵServerRendererFactory2 {
-    if ((this.__ɵServerRendererFactory2_35 == null)) { (this.__ɵServerRendererFactory2_35 = new import6.ɵServerRendererFactory2(this.parent.get(import0.NgZone),this.parent.get(import4.DOCUMENT),this._ɵSharedStylesHost_34)); }
-    return this.__ɵServerRendererFactory2_35;
-  }
-  get _ɵAnimationEngine_36():import8.ɵNoopAnimationEngine {
-    if ((this.__ɵAnimationEngine_36 == null)) { (this.__ɵAnimationEngine_36 = new import8.ɵNoopAnimationEngine()); }
-    return this.__ɵAnimationEngine_36;
-  }
-  get _RendererFactory2_37():any {
-    if ((this.__RendererFactory2_37 == null)) { (this.__RendererFactory2_37 = import6.ɵa(this._ɵServerRendererFactory2_35,this._ɵAnimationEngine_36,this.parent.get(import0.NgZone))); }
-    return this.__RendererFactory2_37;
-  }
-  get _Testability_38():any {
-    if ((this.__Testability_38 == null)) { (this.__Testability_38 = (null as any)); }
-    return this.__Testability_38;
-  }
-  get _Meta_39():import4.Meta {
-    if ((this.__Meta_39 == null)) { (this.__Meta_39 = new import4.Meta(this.parent.get(import4.DOCUMENT))); }
-    return this.__Meta_39;
-  }
-  get _Title_40():import4.Title {
-    if ((this.__Title_40 == null)) { (this.__Title_40 = new import4.Title(this.parent.get(import4.DOCUMENT))); }
-    return this.__Title_40;
-  }
-  get _APP_BOOTSTRAP_LISTENER_42():any[] {
-    if ((this.__APP_BOOTSTRAP_LISTENER_42 == null)) { (this.__APP_BOOTSTRAP_LISTENER_42 = [import7.loadPrebootFactory(this.parent.get(import6.PlatformState),this._RendererFactory2_37,this._PREBOOT_RECORD_OPTIONS_41)]); }
-    return this.__APP_BOOTSTRAP_LISTENER_42;
-  }
-  createInternal():import1.AppServerModule {
-    this._HttpModule_0 = new import2.HttpModule();
-    this._CommonModule_1 = new import3.CommonModule();
-    this._ErrorHandler_2 = import4.ɵa();
-    this._APP_ID_3 = 'ng-universal-example';
-    this._ɵTRANSITION_ID_4 = this._APP_ID_3;
-    this._APP_INITIALIZER_5 = [
-      import0.ɵo,
-      import4.ɵc(this.parent.get(import4.NgProbeToken,(null as any)),this.parent.get(import0.NgProbeToken,(null as any))),
-      import4.ɵf(this._ɵTRANSITION_ID_4,this.parent.get(import4.DOCUMENT),this)
-    ]
-    ;
-    this._ApplicationInitStatus_6 = new import0.ApplicationInitStatus(this._APP_INITIALIZER_5);
-    this._ɵf_7 = new import0.ɵf(this.parent.get(import0.NgZone),this.parent.get(import0.ɵConsole),this,this._ErrorHandler_2,this.componentFactoryResolver,this._ApplicationInitStatus_6);
-    this._ApplicationRef_8 = this._ɵf_7;
-    this._ApplicationModule_9 = new import0.ApplicationModule(this._ApplicationRef_8);
-    this._BrowserModule_10 = new import4.BrowserModule(this.parent.get(import4.BrowserModule,(null as any)));
-    this._NoopAnimationsModule_11 = new import5.NoopAnimationsModule();
-    this._ServerModule_12 = new import6.ServerModule();
-    this._ServerPrebootModule_13 = new import7.ServerPrebootModule();
-    this._AppServerModule_14 = new import1.AppServerModule();
-    this._PREBOOT_RECORD_OPTIONS_41 = {appRoot: 'app-root'};
-    return this._AppServerModule_14;
-  }
-  getInternal(token:any,notFoundResult:any):any {
-    if ((token === import2.HttpModule)) { return this._HttpModule_0; }
-    if ((token === import3.CommonModule)) { return this._CommonModule_1; }
-    if ((token === import0.ErrorHandler)) { return this._ErrorHandler_2; }
-    if ((token === import0.APP_ID)) { return this._APP_ID_3; }
-    if ((token === import4.ɵTRANSITION_ID)) { return this._ɵTRANSITION_ID_4; }
-    if ((token === import0.APP_INITIALIZER)) { return this._APP_INITIALIZER_5; }
-    if ((token === import0.ApplicationInitStatus)) { return this._ApplicationInitStatus_6; }
-    if ((token === import0.ɵf)) { return this._ɵf_7; }
-    if ((token === import0.ApplicationRef)) { return this._ApplicationRef_8; }
-    if ((token === import0.ApplicationModule)) { return this._ApplicationModule_9; }
-    if ((token === import4.BrowserModule)) { return this._BrowserModule_10; }
-    if ((token === import5.NoopAnimationsModule)) { return this._NoopAnimationsModule_11; }
-    if ((token === import6.ServerModule)) { return this._ServerModule_12; }
-    if ((token === import7.ServerPrebootModule)) { return this._ServerPrebootModule_13; }
-    if ((token === import1.AppServerModule)) { return this._AppServerModule_14; }
-    if ((token === import2.BrowserXhr)) { return this._BrowserXhr_15; }
-    if ((token === import2.ResponseOptions)) { return this._ResponseOptions_16; }
-    if ((token === import2.XSRFStrategy)) { return this._XSRFStrategy_17; }
-    if ((token === import2.XHRBackend)) { return this._XHRBackend_18; }
-    if ((token === import2.RequestOptions)) { return this._RequestOptions_19; }
-    if ((token === import2.Http)) { return this._Http_20; }
-    if ((token === import0.LOCALE_ID)) { return this._LOCALE_ID_21; }
-    if ((token === import3.NgLocalization)) { return this._NgLocalization_22; }
-    if ((token === import0.Compiler)) { return this._Compiler_23; }
-    if ((token === import0.IterableDiffers)) { return this._IterableDiffers_24; }
-    if ((token === import0.KeyValueDiffers)) { return this._KeyValueDiffers_25; }
-    if ((token === import4.DomSanitizer)) { return this._DomSanitizer_26; }
-    if ((token === import0.Sanitizer)) { return this._Sanitizer_27; }
-    if ((token === import4.HAMMER_GESTURE_CONFIG)) { return this._HAMMER_GESTURE_CONFIG_28; }
-    if ((token === import4.EVENT_MANAGER_PLUGINS)) { return this._EVENT_MANAGER_PLUGINS_29; }
-    if ((token === import4.EventManager)) { return this._EventManager_30; }
-    if ((token === import4.ɵDomSharedStylesHost)) { return this._ɵDomSharedStylesHost_31; }
-    if ((token === import4.ɵDomRendererFactory2)) { return this._ɵDomRendererFactory2_32; }
-    if ((token === import6.ɵb)) { return this._ɵb_33; }
-    if ((token === import4.ɵSharedStylesHost)) { return this._ɵSharedStylesHost_34; }
-    if ((token === import6.ɵServerRendererFactory2)) { return this._ɵServerRendererFactory2_35; }
-    if ((token === import8.ɵAnimationEngine)) { return this._ɵAnimationEngine_36; }
-    if ((token === import0.RendererFactory2)) { return this._RendererFactory2_37; }
-    if ((token === import0.Testability)) { return this._Testability_38; }
-    if ((token === import4.Meta)) { return this._Meta_39; }
-    if ((token === import4.Title)) { return this._Title_40; }
-    if ((token === import7.PREBOOT_RECORD_OPTIONS)) { return this._PREBOOT_RECORD_OPTIONS_41; }
-    if ((token === import0.APP_BOOTSTRAP_LISTENER)) { return this._APP_BOOTSTRAP_LISTENER_42; }
-    return notFoundResult;
-  }
-  destroyInternal():void {
-    this._ɵf_7.ngOnDestroy();
-    (this.__ɵDomSharedStylesHost_31 && this._ɵDomSharedStylesHost_31.ngOnDestroy());
-  }
-}
-export const AppServerModuleNgFactory:import0.NgModuleFactory<import1.AppServerModule> = new import0.NgModuleFactory<any>(AppServerModuleInjector,import1.AppServerModule);
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC5zZXJ2ZXIubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC5zZXJ2ZXIubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OyJ9
+import * as i0 from '@angular/core';
+import * as i1 from './app.server.module';
+import * as i2 from './app/app.component';
+import * as i3 from './app/app.component.ngfactory';
+import * as i4 from '@angular/http';
+import * as i5 from '@angular/platform-server';
+import * as i6 from '@angular/common';
+import * as i7 from '@angular/platform-browser';
+import * as i8 from '@angular/animations/browser';
+import * as i9 from '@angular/platform-browser/animations';
+import * as i10 from '@angular/animations';
+import * as i11 from './modules/transfer-state/transfer-state';
+import * as i12 from './modules/transfer-state/server-transfer-state';
+import * as i13 from './modules/transfer-http/transfer-http';
+import * as i14 from './app/services/comments.service';
+import * as i15 from './app/services/posts.service';
+import * as i16 from './modules/transfer-state/server-transfer-state.module';
+import * as i17 from './modules/transfer-http/transfer-http.module';
+import * as i18 from './app/app.module';
+export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i0.ɵcmf(i1.AppServerModule,
+    [i2.AppComponent],(_l:any) => {
+      return i0.ɵmod([i0.ɵmpd(512,i0.ComponentFactoryResolver,i0.ɵCodegenComponentFactoryResolver,
+          [[8,[i3.AppComponentNgFactory]],[3,i0.ComponentFactoryResolver],i0.NgModuleRef]),
+          i0.ɵmpd(4608,i4.BrowserXhr,i5.ɵc,([] as any[])),i0.ɵmpd(4608,i4.ResponseOptions,
+              i4.BaseResponseOptions,([] as any[])),i0.ɵmpd(4608,i4.XSRFStrategy,i5.ɵd,
+              ([] as any[])),i0.ɵmpd(4608,i4.XHRBackend,i4.XHRBackend,[i4.BrowserXhr,
+              i4.ResponseOptions,i4.XSRFStrategy]),i0.ɵmpd(4608,i4.RequestOptions,
+              i4.BaseRequestOptions,([] as any[])),i0.ɵmpd(5120,i4.Http,i5.ɵe,[i4.XHRBackend,
+              i4.RequestOptions]),i0.ɵmpd(5120,i0.LOCALE_ID,i0.ɵm,[[3,i0.LOCALE_ID]]),
+          i0.ɵmpd(4608,i6.NgLocalization,i6.NgLocaleLocalization,[i0.LOCALE_ID]),i0.ɵmpd(4608,
+              i0.Compiler,i0.Compiler,([] as any[])),i0.ɵmpd(5120,i0.IterableDiffers,
+              i0.ɵk,([] as any[])),i0.ɵmpd(5120,i0.KeyValueDiffers,i0.ɵl,([] as any[])),
+          i0.ɵmpd(4608,i7.DomSanitizer,i7.ɵe,[i7.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,
+              (null as any),[i7.DomSanitizer]),i0.ɵmpd(4608,i7.HAMMER_GESTURE_CONFIG,
+              i7.HammerGestureConfig,([] as any[])),i0.ɵmpd(5120,i7.EVENT_MANAGER_PLUGINS,
+              (p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
+                return [new i7.ɵDomEventsPlugin(p0_0),new i7.ɵKeyEventsPlugin(p1_0),
+                    new i7.ɵHammerGesturesPlugin(p2_0,p2_1)];
+              },[i7.DOCUMENT,i7.DOCUMENT,i7.DOCUMENT,i7.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
+              i7.EventManager,i7.EventManager,[i7.EVENT_MANAGER_PLUGINS,i0.NgZone]),
+          i0.ɵmpd(135680,i7.ɵDomSharedStylesHost,i7.ɵDomSharedStylesHost,[i7.DOCUMENT]),
+          i0.ɵmpd(4608,i7.ɵDomRendererFactory2,i7.ɵDomRendererFactory2,[i7.EventManager,
+              i7.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i5.ɵb,i5.ɵb,[i7.DOCUMENT,[2,i7.ɵTRANSITION_ID]]),
+          i0.ɵmpd(6144,i7.ɵSharedStylesHost,(null as any),[i5.ɵb]),i0.ɵmpd(4608,i5.ɵServerRendererFactory2,
+              i5.ɵServerRendererFactory2,[i0.NgZone,i7.DOCUMENT,i7.ɵSharedStylesHost]),
+          i0.ɵmpd(4608,i8.AnimationDriver,i8.ɵNoopAnimationDriver,([] as any[])),i0.ɵmpd(5120,
+              i8.ɵAnimationStyleNormalizer,i9.ɵd,([] as any[])),i0.ɵmpd(4608,i8.ɵAnimationEngine,
+              i9.ɵb,[i8.AnimationDriver,i8.ɵAnimationStyleNormalizer]),i0.ɵmpd(5120,
+              i0.RendererFactory2,i5.ɵa,[i5.ɵServerRendererFactory2,i8.ɵAnimationEngine,
+                  i0.NgZone]),i0.ɵmpd(4352,i0.Testability,(null as any),([] as any[])),
+          i0.ɵmpd(4608,i7.Meta,i7.Meta,[i7.DOCUMENT]),i0.ɵmpd(4608,i7.Title,i7.Title,
+              [i7.DOCUMENT]),i0.ɵmpd(4608,i10.AnimationBuilder,i9.ɵBrowserAnimationBuilder,
+              [i0.RendererFactory2]),i0.ɵmpd(4608,i11.TransferState,i12.ServerTransferState,
+              [i5.PlatformState,i0.RendererFactory2]),i0.ɵmpd(4608,i13.TransferHttp,
+              i13.TransferHttp,[i4.Http,i11.TransferState]),i0.ɵmpd(4608,i14.CommentsService,
+              i14.CommentsService,([] as any[])),i0.ɵmpd(4608,i15.PostsService,i15.PostsService,
+              [i13.TransferHttp]),i0.ɵmpd(5120,i0.APP_BOOTSTRAP_LISTENER,(p0_0:any,
+              p0_1:any) => {
+            return [i1.onBootstrap(p0_0,p0_1)];
+          },[i0.ApplicationRef,i11.TransferState]),i0.ɵmpd(512,i4.HttpModule,i4.HttpModule,
+              ([] as any[])),i0.ɵmpd(512,i6.CommonModule,i6.CommonModule,([] as any[])),
+          i0.ɵmpd(1024,i0.ErrorHandler,i7.ɵa,([] as any[])),i0.ɵmpd(256,i0.APP_ID,
+              'ng-universal-example',([] as any[])),i0.ɵmpd(2048,i7.ɵTRANSITION_ID,
+              (null as any),[i0.APP_ID]),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,
+              p0_1:any,p1_0:any,p1_1:any,p1_2:any) => {
+            return [i7.ɵc(p0_0,p0_1),i7.ɵf(p1_0,p1_1,p1_2)];
+          },[[2,i7.NgProbeToken],[2,i0.NgProbeToken],i7.ɵTRANSITION_ID,i7.DOCUMENT,
+              i0.Injector]),i0.ɵmpd(512,i0.ApplicationInitStatus,i0.ApplicationInitStatus,
+              [[2,i0.APP_INITIALIZER]]),i0.ɵmpd(131584,i0.ɵe,i0.ɵe,[i0.NgZone,i0.ɵConsole,
+              i0.Injector,i0.ErrorHandler,i0.ComponentFactoryResolver,i0.ApplicationInitStatus]),
+          i0.ɵmpd(2048,i0.ApplicationRef,(null as any),[i0.ɵe]),i0.ɵmpd(512,i0.ApplicationModule,
+              i0.ApplicationModule,[i0.ApplicationRef]),i0.ɵmpd(512,i7.BrowserModule,
+              i7.BrowserModule,[[3,i7.BrowserModule]]),i0.ɵmpd(512,i9.NoopAnimationsModule,
+              i9.NoopAnimationsModule,([] as any[])),i0.ɵmpd(512,i5.ServerModule,i5.ServerModule,
+              ([] as any[])),i0.ɵmpd(512,i16.ServerTransferStateModule,i16.ServerTransferStateModule,
+              ([] as any[])),i0.ɵmpd(512,i17.TransferHttpModule,i17.TransferHttpModule,
+              ([] as any[])),i0.ɵmpd(512,i18.AppModule,i18.AppModule,([] as any[])),
+          i0.ɵmpd(512,i1.AppServerModule,i1.AppServerModule,([] as any[]))]);
+    });
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC5zZXJ2ZXIubW9kdWxlLm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC5zZXJ2ZXIubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbIiAiXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsifQ==

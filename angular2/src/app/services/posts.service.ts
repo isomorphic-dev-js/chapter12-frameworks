@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { TransferHttp } from '../../modules/transfer-http/transfer-http';
 
 const service = 'http://localhost:3535'
 
 @Injectable()
 export class PostsService {
 
-  constructor(private http: Http) {}
+  constructor(private http: TransferHttp) {}
 
   getPosts(): any {
     return this.http.get(`${service}/posts`);

@@ -6,9 +6,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
-var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
-var browser_1 = require("preboot/browser");
+var common_1 = require("@angular/common");
+var transfer_http_module_1 = require("../modules/transfer-http/transfer-http.module");
 var app_component_1 = require("./app.component");
 var posts_list_component_1 = require("./posts-list/posts-list.component");
 var comment_component_1 = require("./comment/comment.component");
@@ -41,10 +41,8 @@ AppModule = __decorate([
             post_detail_component_1.PostDetailComponent
         ],
         imports: [
-            platform_browser_1.BrowserModule.withServerTransition({
-                appId: 'ng-universal-example'
-            }),
-            browser_1.BrowserPrebootModule.replayEvents()
+            transfer_http_module_1.TransferHttpModule,
+            common_1.CommonModule
         ],
         providers: [
             comments_service_1.CommentsService,

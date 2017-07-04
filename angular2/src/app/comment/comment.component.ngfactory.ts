@@ -6,103 +6,56 @@
  /* tslint:disable */
 
 
-import * as import0 from './comment.component.css.shim.ngstyle';
-import * as import1 from '@angular/core';
-import * as import2 from './comment.component';
-const styles_CommentComponent:any[] = [import0.styles];
-export const RenderType_CommentComponent:import1.RendererType2 = import1.ɵcrt({
-  encapsulation: 0,
-  styles: styles_CommentComponent,
-  data: {}
+import * as i0 from './comment.component.css.shim.ngstyle';
+import * as i1 from '@angular/core';
+import * as i2 from './comment.component';
+const styles_CommentComponent:any[] = [i0.styles];
+export const RenderType_CommentComponent:i1.RendererType2 = i1.ɵcrt({encapsulation:0,
+    styles:styles_CommentComponent,data:{}});
+export function View_CommentComponent_0(_l:any):i1.ɵViewDefinition {
+  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),21,'div',[['class',
+      'comment']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),
+          3,'a',[['class','avatar']],(null as any),(null as any),(null as any),(null as any),
+          (null as any))),(_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵeld(0,
+          (null as any),(null as any),0,'img',([] as any[]),[[8,'src',4]],(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['\n  '])),(_l()(),i1.ɵted((null as any),['\n  '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),13,'div',[['class','content']],(null as any),(null as any),
+          (null as any),(null as any),(null as any))),(_l()(),i1.ɵted((null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'h4',[['class',
+          'title']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n      ','\n    '])),(_l()(),i1.ɵted((null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'div',[['class',
+          'text']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n      ','\n    '])),(_l()(),i1.ɵted((null as any),
+          ['\n    '])),(_l()(),i1.ɵeld(0,(null as any),(null as any),4,'div',[['class',
+          'metadata']],(null as any),(null as any),(null as any),(null as any),(null as any))),
+      (_l()(),i1.ɵted((null as any),['\n      '])),(_l()(),i1.ɵeld(0,(null as any),
+          (null as any),1,'div',([] as any[]),(null as any),(null as any),(null as any),
+          (null as any),(null as any))),(_l()(),i1.ɵted((null as any),['User: ',''])),
+      (_l()(),i1.ɵted((null as any),['\n    '])),(_l()(),i1.ɵted((null as any),['\n  '])),
+      (_l()(),i1.ɵted((null as any),['\n'])),(_l()(),i1.ɵted((null as any),['\n']))],
+      (null as any),(_ck,_v) => {
+        var _co:i2.CommentComponent = _v.component;
+        const currVal_0:any = i1.ɵinlineInterpolate(1,'',_co.comment.userImage,'');
+        _ck(_v,4,0,currVal_0);
+        const currVal_1:any = _co.comment.title;
+        _ck(_v,10,0,currVal_1);
+        const currVal_2:any = _co.comment.message;
+        _ck(_v,13,0,currVal_2);
+        const currVal_3:any = _co.comment.user;
+        _ck(_v,18,0,currVal_3);
+      });
 }
-);
-export function View_CommentComponent_0(l:any):import1.ɵViewDefinition {
-  return import1.ɵvid(0,[
-      (l()(),import1.ɵeld(0,(null as any),(null as any),21,'div',[[
-        'class',
-        'comment'
-      ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n  '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),3,'a',[[
-        'class',
-        'avatar'
-      ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),0,'img',([] as any[]),[[
-        8,
-        'src',
-        4
-      ]
-    ],(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n  '])),
-    (l()(),import1.ɵted((null as any),['\n  '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),13,'div',[[
-        'class',
-        'content'
-      ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),1,'h4',[[
-        'class',
-        'title'
-      ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),[
-      '\n      ',
-      '\n    '
-    ]
-    )),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),1,'div',[[
-        'class',
-        'text'
-      ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),[
-      '\n      ',
-      '\n    '
-    ]
-    )),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-      (l()(),import1.ɵeld(0,(null as any),(null as any),4,'div',[[
-        'class',
-        'metadata'
-      ]
-    ],(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),['\n      '])),
-    (l()(),import1.ɵeld(0,(null as any),(null as any),1,'div',([] as any[]),(null as any),(null as any),(null as any),(null as any),(null as any))),
-    (l()(),import1.ɵted((null as any),[
-      'User: ',
-      ''
-    ]
-    )),
-    (l()(),import1.ɵted((null as any),['\n    '])),
-    (l()(),import1.ɵted((null as any),['\n  '])),
-    (l()(),import1.ɵted((null as any),['\n'])),
-    (l()(),import1.ɵted((null as any),['\n']))
-  ]
-  ,(null as any),(ck,v) => {
-    var co:import2.CommentComponent = v.component;
-    const currVal_0:any = import1.ɵinlineInterpolate(1,'',co.comment.userImage,'');
-    ck(v,4,0,currVal_0);
-    const currVal_1:any = co.comment.title;
-    ck(v,10,0,currVal_1);
-    const currVal_2:any = co.comment.message;
-    ck(v,13,0,currVal_2);
-    const currVal_3:any = co.comment.user;
-    ck(v,18,0,currVal_3);
-  });
-}
-function View_CommentComponent_Host_0(l:any):import1.ɵViewDefinition {
-  return import1.ɵvid(0,[
-    (l()(),import1.ɵeld(0,(null as any),(null as any),1,'app-comment',([] as any[]),(null as any),(null as any),(null as any),View_CommentComponent_0,RenderType_CommentComponent)),
-    import1.ɵdid(114688,(null as any),0,import2.CommentComponent,([] as any[]),(null as any),(null as any))
-  ]
-  ,(ck,v) => {
-    ck(v,1,0);
+export function View_CommentComponent_Host_0(_l:any):i1.ɵViewDefinition {
+  return i1.ɵvid(0,[(_l()(),i1.ɵeld(0,(null as any),(null as any),1,'app-comment',
+      ([] as any[]),(null as any),(null as any),(null as any),View_CommentComponent_0,
+      RenderType_CommentComponent)),i1.ɵdid(114688,(null as any),0,i2.CommentComponent,
+      ([] as any[]),(null as any),(null as any))],(_ck,_v) => {
+    _ck(_v,1,0);
   },(null as any));
 }
-export const CommentComponentNgFactory:import1.ComponentFactory<import2.CommentComponent> = import1.ɵccf('app-comment',import2.CommentComponent,View_CommentComponent_Host_0,{comment: 'comment'},{},([] as any[]));
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9jb21tZW50L2NvbW1lbnQuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9jb21tZW50L2NvbW1lbnQuY29tcG9uZW50LnRzIiwibmc6Ly8vVXNlcnMvZWx5c2Vrb2xrZXIvZGV2L3BlcnNvbmFsL2NoYXB0ZXItMTItZnJhbWV3b3Jrcy9hbmd1bGFyMi9zcmMvYXBwL2NvbW1lbnQvY29tbWVudC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9jb21tZW50L2NvbW1lbnQuY29tcG9uZW50LnRzLkNvbW1lbnRDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGNsYXNzPVwiY29tbWVudFwiPlxuICA8YSBjbGFzcz1cImF2YXRhclwiPlxuICAgIDxpbWcgc3JjPXt7Y29tbWVudC51c2VySW1hZ2V9fSAvPlxuICA8L2E+XG4gIDxkaXYgY2xhc3M9XCJjb250ZW50XCI+XG4gICAgPGg0IGNsYXNzPVwidGl0bGVcIj5cbiAgICAgIHt7Y29tbWVudC50aXRsZX19XG4gICAgPC9oND5cbiAgICA8ZGl2IGNsYXNzPVwidGV4dFwiPlxuICAgICAge3tjb21tZW50Lm1lc3NhZ2V9fVxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJtZXRhZGF0YVwiPlxuICAgICAgPGRpdj5Vc2VyOiB7e2NvbW1lbnQudXNlcn19PC9kaXY+XG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuPC9kaXY+XG4iLCI8YXBwLWNvbW1lbnQ+PC9hcHAtY29tbWVudD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztNQ0FBO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBcUI7TUFDbkI7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUFrQjtNQUNoQjtRQUFBO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBaUM7SUFDL0I7TUFDSjtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXFCO01BQ25CO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBa0I7TUFBQTtNQUFBO0lBQUE7SUFBQTtJQUViO01BQ0w7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUFrQjtNQUFBO01BQUE7SUFBQTtJQUFBO0lBRVo7TUFDTjtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXNCO0lBQ3BCO0lBQUs7TUFBQTtNQUFBO0lBQUE7SUFBQTtJQUE0QjtJQUM3QjtJQUNGO0lBQ0Y7Ozs7SUFiRztJQUFMLFNBQUssU0FBTDtJQUdrQjtJQUFBO0lBR0E7SUFBQTtJQUlYO0lBQUE7Ozs7O0lDWlg7Z0JBQUE7OztJQUFBOzs7In0=
+export const CommentComponentNgFactory:i1.ComponentFactory<i2.CommentComponent> = i1.ɵccf('app-comment',
+    i2.CommentComponent,View_CommentComponent_Host_0,{comment:'comment'},{},([] as any[]));
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9jb21tZW50L2NvbW1lbnQuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9jb21tZW50L2NvbW1lbnQuY29tcG9uZW50LnRzIiwibmc6Ly8vVXNlcnMvZWx5c2Vrb2xrZXIvZGV2L3BlcnNvbmFsL2NoYXB0ZXItMTItZnJhbWV3b3Jrcy9hbmd1bGFyMi9zcmMvYXBwL2NvbW1lbnQvY29tbWVudC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9jb21tZW50L2NvbW1lbnQuY29tcG9uZW50LnRzLkNvbW1lbnRDb21wb25lbnRfSG9zdC5odG1sIl0sInNvdXJjZXNDb250ZW50IjpbIiAiLCI8ZGl2IGNsYXNzPVwiY29tbWVudFwiPlxuICA8YSBjbGFzcz1cImF2YXRhclwiPlxuICAgIDxpbWcgc3JjPXt7Y29tbWVudC51c2VySW1hZ2V9fSAvPlxuICA8L2E+XG4gIDxkaXYgY2xhc3M9XCJjb250ZW50XCI+XG4gICAgPGg0IGNsYXNzPVwidGl0bGVcIj5cbiAgICAgIHt7Y29tbWVudC50aXRsZX19XG4gICAgPC9oND5cbiAgICA8ZGl2IGNsYXNzPVwidGV4dFwiPlxuICAgICAge3tjb21tZW50Lm1lc3NhZ2V9fVxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3M9XCJtZXRhZGF0YVwiPlxuICAgICAgPGRpdj5Vc2VyOiB7e2NvbW1lbnQudXNlcn19PC9kaXY+XG4gICAgPC9kaXY+XG4gIDwvZGl2PlxuPC9kaXY+XG4iLCI8YXBwLWNvbW1lbnQ+PC9hcHAtY29tbWVudD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7b0JDQUE7TUFBQTtNQUFxQix5Q0FDbkI7VUFBQTtVQUFBLGdCQUFrQiwyQ0FDaEI7VUFBQTtVQUFBLDRDQUFpQztVQUFBLFdBQy9CLHlDQUNKO1VBQUE7VUFBQSw0Q0FBcUI7VUFBQSxhQUNuQjtVQUFBO01BQWtCLHNEQUViO1VBQUEsYUFDTDtVQUFBO01BQWtCLHNEQUVaO1VBQUEsYUFDTjtVQUFBO01BQXNCLDZDQUNwQjtVQUFBO1VBQUEsOEJBQUs7TUFBNEIsMkNBQzdCO01BQ0YsdUNBQ0Y7OztRQWJHO1FBQUwsV0FBSyxTQUFMO1FBR2tCO1FBQUE7UUFHQTtRQUFBO1FBSVg7UUFBQTs7OztvQkNaWDtNQUFBO2lDQUFBLFVBQUE7TUFBQTtJQUFBOzs7OyJ9

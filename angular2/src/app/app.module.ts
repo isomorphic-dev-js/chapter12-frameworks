@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TransferHttpModule } from '../modules/transfer-http/transfer-http.module';
 import { RouterModule } from '@angular/router';
-import { BrowserPrebootModule } from 'preboot/browser';
 
 import { AppComponent } from './app.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
@@ -33,10 +33,8 @@ import {PostsService} from './services/posts.service';
     PostDetailComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({
-      appId: 'ng-universal-example'
-    }),
-    BrowserPrebootModule.replayEvents()
+    TransferHttpModule,
+    CommonModule
   ],
   providers: [
     CommentsService,

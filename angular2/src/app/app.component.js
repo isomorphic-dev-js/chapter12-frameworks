@@ -10,13 +10,6 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'app';
-        this.myPost = {
-            title: 'test',
-            image: 'hi',
-            id: 1,
-            urlSlug: "test",
-            body: "test"
-        };
     }
     return AppComponent;
 }());

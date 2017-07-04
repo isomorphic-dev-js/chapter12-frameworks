@@ -6,89 +6,33 @@
  */
 /* tslint:disable */
 exports.__esModule = true;
-var import0 = require("./app.component.css.shim.ngstyle");
-var import1 = require("@angular/core");
-var import2 = require("./post/post.component.ngfactory");
-var import3 = require("./post/post.component");
-var import4 = require("./app.component");
-var styles_AppComponent = [import0.styles];
-exports.RenderType_AppComponent = import1.ɵcrt({
-    encapsulation: 0,
-    styles: styles_AppComponent,
-    data: {}
-});
-function View_AppComponent_0(l) {
-    return import1.ɵvid(0, [
-        (l()(), import1.ɵted(null, ['\n'])),
-        (l()(), import1.ɵeld(0, null, null, 15, 'div', [[
-                'class',
-                'ui borderless main menu'
-            ]
-        ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵeld(0, null, null, 12, 'div', [[
-                'class',
-                'ui text container'
-            ]
-        ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵeld(0, null, null, 4, 'div', [[
-                'class',
-                'header item'
-            ]
-        ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n      '])),
-        (l()(), import1.ɵeld(0, null, null, 0, 'img', [
-            [
-                'class',
-                'logo'
-            ],
-            [
-                'src',
-                'http://placehold.it/64x64'
-            ]
-        ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n      '])),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵeld(0, null, null, 1, 'a', [[
-                'class',
-                'item'
-            ]
-        ], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['Posts'])),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵted(null, ['\n'])),
-        (l()(), import1.ɵted(null, ['\n'])),
-        (l()(), import1.ɵeld(0, null, null, 9, 'div', [], null, null, null, null, null)),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵted(null, ['\n      '])),
-        (l()(), import1.ɵted(null, ['\n      '])),
-        (l()(), import1.ɵted(null, ['\n    '])),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵted(null, ['\n  '])),
-        (l()(), import1.ɵeld(0, null, null, 1, 'app-post', [], null, null, null, import2.View_PostComponent_0, import2.RenderType_PostComponent)),
-        import1.ɵdid(114688, null, 0, import3.PostComponent, [], { post: [
-                0,
-                'post'
-            ]
-        }, null),
-        (l()(), import1.ɵted(null, ['\n'])),
-        (l()(), import1.ɵted(null, ['\n\n']))
-    ], function (ck, v) {
-        var co = v.component;
-        var currVal_0 = co.myPost;
-        ck(v, 26, 0, currVal_0);
+var i0 = require("./app.component.css.shim.ngstyle");
+var i1 = require("@angular/core");
+var i2 = require("./posts-list/posts-list.component.ngfactory");
+var i3 = require("./posts-list/posts-list.component");
+var i4 = require("./services/posts.service");
+var i5 = require("./app.component");
+var styles_AppComponent = [i0.styles];
+exports.RenderType_AppComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_AppComponent,
+    data: {} });
+function View_AppComponent_0(_l) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 15, 'div', [['class', 'ui borderless main menu']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])),
+        (_l()(), i1.ɵeld(0, null, null, 12, 'div', [['class', 'ui text container']], null, null, null, null, null)),
+        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 4, 'div', [['class', 'header item']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
+        (_l()(), i1.ɵeld(0, null, null, 0, 'img', [['class', 'logo'], ['src',
+                'http://placehold.it/64x64']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n      '])),
+        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n    '])),
+        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 1, 'a', [['class', 'item']], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['Posts'])), (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵeld(0, null, null, 4, 'div', [], null, null, null, null, null)), (_l()(), i1.ɵted(null, ['\n  '])), (_l()(),
+            i1.ɵeld(0, null, null, 1, 'app-posts-list', [], null, null, null, i2.View_PostsListComponent_0, i2.RenderType_PostsListComponent)),
+        i1.ɵdid(245760, null, 0, i3.PostsListComponent, [i4.PostsService], null, null), (_l()(), i1.ɵted(null, ['\n'])), (_l()(), i1.ɵted(null, ['\n\n']))], function (_ck, _v) {
+        _ck(_v, 21, 0);
     }, null);
 }
 exports.View_AppComponent_0 = View_AppComponent_0;
-function View_AppComponent_Host_0(l) {
-    return import1.ɵvid(0, [
-        (l()(), import1.ɵeld(0, null, null, 1, 'app-root', [], null, null, null, View_AppComponent_0, exports.RenderType_AppComponent)),
-        import1.ɵdid(49152, null, 0, import4.AppComponent, [], null, null)
-    ], null, null);
+function View_AppComponent_Host_0(_l) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-root', [], null, null, null, View_AppComponent_0, exports.RenderType_AppComponent)),
+        i1.ɵdid(49152, null, 0, i5.AppComponent, [], null, null)], null, null);
 }
-exports.AppComponentNgFactory = import1.ɵccf('app-root', import4.AppComponent, View_AppComponent_Host_0, {}, {}, []);
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzIiwibmc6Ly8vVXNlcnMvZWx5c2Vrb2xrZXIvZGV2L3BlcnNvbmFsL2NoYXB0ZXItMTItZnJhbWV3b3Jrcy9hbmd1bGFyMi9zcmMvYXBwL2FwcC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzLkFwcENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjwhLS1UaGUgd2hvbGUgY29udGVudCBiZWxvdyBjYW4gYmUgcmVtb3ZlZCB3aXRoIHRoZSBuZXcgY29kZS4tLT5cbjxkaXYgY2xhc3M9XCJ1aSBib3JkZXJsZXNzIG1haW4gbWVudVwiPlxuICA8ZGl2IGNsYXNzPVwidWkgdGV4dCBjb250YWluZXJcIj5cbiAgICA8ZGl2IGNsYXNzPVwiaGVhZGVyIGl0ZW1cIj5cbiAgICAgIDxpbWcgY2xhc3M9XCJsb2dvXCIgc3JjPVwiaHR0cDovL3BsYWNlaG9sZC5pdC82NHg2NFwiIC8+XG4gICAgICA8IS0tPHNwYW4gc3R5bGU9e3t7cGFkZGluZ0xlZnQ6IFwiMXJlbVwifX19PlNhbXBsZSBCbG9nPC9zcGFuPi0tPlxuICAgIDwvZGl2PlxuICAgIDwhLS08TGluayBwcmVmZXRjaCBocmVmPVwiL1wiPi0tPlxuICAgIDxhIGNsYXNzPVwiaXRlbVwiPlBvc3RzPC9hPlxuICAgIDwhLS08L0xpbms+LS0+XG4gIDwvZGl2PlxuPC9kaXY+XG48ZGl2PlxuICA8IS0tPGRpdiAqbmdGb3I9XCJsZXQgaGVybyBvZiBoZXJvZXNcIi0tPlxuICAgICAgPCEtLVtjbGFzcy5zZWxlY3RlZF09XCJoZXJvID09PSBzZWxlY3RlZEhlcm9cIi0tPlxuICAgICAgPCEtLShjbGljayk9XCJvblNlbGVjdChoZXJvKVwiPi0tPlxuICAgIDwhLS08c3BhbiBjbGFzcz1cImJhZGdlXCI+e3toZXJvLmlkfX08L3NwYW4+IHt7aGVyby5uYW1lfX0tLT5cbiAgPCEtLTwvZGl2Pi0tPlxuICA8YXBwLXBvc3QgW3Bvc3RdPVwibXlQb3N0XCI+PC9hcHAtcG9zdD5cbjwvZGl2PlxuXG4iLCI8YXBwLXJvb3Q+PC9hcHAtcm9vdD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0lDQWdFO01BQ2hFO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBcUM7TUFDbkM7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUErQjtNQUM3QjtRQUFBO1FBQUE7TUFBQTtJQUFBO0lBQXlCO0lBQ3ZCO01BQUE7UUFBQTtRQUFBO01BQUE7O01BQUE7UUFBQTtRQUFBO01BQUE7O0lBQUE7S0FBQTtJQUFvRDtJQUNXO0lBQzNEO0lBQ3lCO01BQy9CO1FBQUE7UUFBQTtNQUFBO0lBQUE7SUFBZ0I7SUFBUztJQUNYO0lBQ1Y7SUFDRjtJQUNOO0lBQUs7SUFDb0M7SUFDWTtJQUNmO0lBQ3lCO0lBQ2hEO0lBQ2I7a0JBQUE7UUFBQTtRQUFBO01BQUE7SUFBQTtJQUFxQztJQUNqQzs7OztJQURNO0lBQVYsVUFBVSxTQUFWOzs7OztJQ2xCRjtnQkFBQTs7OzsifQ==
+exports.View_AppComponent_Host_0 = View_AppComponent_Host_0;
+exports.AppComponentNgFactory = i1.ɵccf('app-root', i5.AppComponent, View_AppComponent_Host_0, {}, {}, []);
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50Lm5nZmFjdG9yeS50cyIsInZlcnNpb24iOjMsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzIiwibmc6Ly8vVXNlcnMvZWx5c2Vrb2xrZXIvZGV2L3BlcnNvbmFsL2NoYXB0ZXItMTItZnJhbWV3b3Jrcy9hbmd1bGFyMi9zcmMvYXBwL2FwcC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzLkFwcENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjwhLS1UaGUgd2hvbGUgY29udGVudCBiZWxvdyBjYW4gYmUgcmVtb3ZlZCB3aXRoIHRoZSBuZXcgY29kZS4tLT5cbjxkaXYgY2xhc3M9XCJ1aSBib3JkZXJsZXNzIG1haW4gbWVudVwiPlxuICA8ZGl2IGNsYXNzPVwidWkgdGV4dCBjb250YWluZXJcIj5cbiAgICA8ZGl2IGNsYXNzPVwiaGVhZGVyIGl0ZW1cIj5cbiAgICAgIDxpbWcgY2xhc3M9XCJsb2dvXCIgc3JjPVwiaHR0cDovL3BsYWNlaG9sZC5pdC82NHg2NFwiIC8+XG4gICAgICA8IS0tPHNwYW4gc3R5bGU9e3t7cGFkZGluZ0xlZnQ6IFwiMXJlbVwifX19PlNhbXBsZSBCbG9nPC9zcGFuPi0tPlxuICAgIDwvZGl2PlxuICAgIDwhLS08TGluayBwcmVmZXRjaCBocmVmPVwiL1wiPi0tPlxuICAgIDxhIGNsYXNzPVwiaXRlbVwiPlBvc3RzPC9hPlxuICAgIDwhLS08L0xpbms+LS0+XG4gIDwvZGl2PlxuPC9kaXY+XG48ZGl2PlxuICA8YXBwLXBvc3RzLWxpc3Q+PC9hcHAtcG9zdHMtbGlzdD5cbjwvZGl2PlxuXG4iLCI8YXBwLXJvb3Q+PC9hcHAtcm9vdD4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQWdFLHVDQUNoRTtNQUFBO01BQUEsNENBQXFDO01BQ25DO1VBQUE7TUFBK0IsMkNBQzdCO1VBQUE7VUFBQSw4QkFBeUI7TUFDdkI7VUFBQTtVQUFBLDhCQUFvRDtNQUNXLDJDQUMzRDtNQUN5QiwyQ0FDL0I7VUFBQTtVQUFBLGdCQUFnQiwwQ0FBUztVQUFBLGFBQ1gseUNBQ1Y7VUFBQSxTQUNGLHVDQUNOO1VBQUE7VUFBQSw4QkFBSyx5Q0FDSDtpQkFBQTtjQUFBO2FBQUE7VUFBQSxlQUFpQyx1Q0FDN0I7VUFBQTtJQURKOzs7O29CQ2JGO01BQUE7YUFBQTs7OzsifQ==
