@@ -1,3 +1,4 @@
+// From https://github.com/FrozenPandaz/ng-universal-demo
 import { Injectable } from '@angular/core';
 import { ConnectionBackend, Http, Request, RequestOptions, RequestOptionsArgs, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';

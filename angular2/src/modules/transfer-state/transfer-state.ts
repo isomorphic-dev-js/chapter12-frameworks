@@ -1,3 +1,4 @@
+// From https://github.com/FrozenPandaz/ng-universal-demo
 import { Injectable } from '@angular/core';
 
 @Injectable()

@@ -1,5 +1,6 @@
+// From https://github.com/FrozenPandaz/ng-universal-demo
 import { NgModule } from '@angular/core';
-import { Http, HttpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import { TransferHttp } from './transfer-http';
 
 @NgModule({

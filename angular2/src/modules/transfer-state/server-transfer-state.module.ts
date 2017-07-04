@@ -1,3 +1,4 @@
+// From https://github.com/FrozenPandaz/ng-universal-demo
 import { NgModule } from '@angular/core';
 import { ServerTransferState } from './server-transfer-state';
 import { TransferState } from './transfer-state';
