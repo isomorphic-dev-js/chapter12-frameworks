@@ -7,12 +7,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 var core_1 = require("@angular/core");
-var PostsListComponent = (function () {
-    function PostsListComponent(postsService) {
+var PostListComponent = (function () {
+    function PostListComponent(postsService) {
         this.postsService = postsService;
         this.posts = [];
     }
-    PostsListComponent.prototype.ngOnInit = function () {
+    PostListComponent.prototype.ngOnInit = function () {
         var _this = this;
         var postsSub = this.postsService.getPosts();
         this.subscription = postsSub.subscribe(function (posts) {
@@ -20,16 +20,16 @@ var PostsListComponent = (function () {
             console.log("posts", _this.posts);
         });
     };
-    PostsListComponent.prototype.ngOnDestroy = function () {
+    PostListComponent.prototype.ngOnDestroy = function () {
         this.subscription.unsubscribe();
     };
-    return PostsListComponent;
+    return PostListComponent;
 }());
-PostsListComponent = __decorate([
+PostListComponent = __decorate([
     core_1.Component({
         selector: 'app-posts-list',
-        templateUrl: './posts-list.component.html',
-        styleUrls: ['./posts-list.component.css']
+        templateUrl: './post-list.component.html',
+        styleUrls: ['./post-list.component.css']
     })
-], PostsListComponent);
-exports.PostsListComponent = PostsListComponent;
+], PostListComponent);
+exports.PostListComponent = PostListComponent;

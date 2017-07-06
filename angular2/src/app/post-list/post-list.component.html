@@ -1,9 +1,3 @@
-
-<!--<div *ngFor="let hero of heroes"-->
-<!--[class.selected]="hero === selectedHero"-->
-<!--(click)="onSelect(hero)">-->
-<!--<span class="badge">{{hero.id}}</span> {{hero.name}}-->
-<!--</div>-->
-
-<app-post *ngFor="let post of posts" [post]="post" limit="200"></app-post>
-<!--<div>Posts/</div>-->
+<div class="ui link items">
+  <app-post *ngFor="let post of posts" [post]="post" limit="200"></app-post>
+</div>

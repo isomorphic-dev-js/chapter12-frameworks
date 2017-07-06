@@ -5,12 +5,10 @@
       <img class="logo" src="http://placehold.it/64x64" />
       <!--<span style={{{paddingLeft: "1rem"}}}>Sample Blog</span>-->
     </div>
-    <!--<Link prefetch href="/">-->
-    <a class="item">Posts</a>
-    <!--</Link>-->
+    <a routerLink="/" class="item">Posts</a>
   </div>
 </div>
-<div>
-  <app-posts-list></app-posts-list>
+<div class="ui main text container offset">
+  <router-outlet></router-outlet>
 </div>
 

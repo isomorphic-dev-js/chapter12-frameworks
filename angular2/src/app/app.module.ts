@@ -4,37 +4,35 @@ import { TransferHttpModule } from '../modules/transfer-http/transfer-http.modul
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { PostsListComponent } from './posts-list/posts-list.component';
+import { PostListComponent } from './post-list/post-list.component';
 import { CommentComponent } from './comment/comment.component';
 import { PostComponent } from './post/post.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 
-import {CommentsService} from './services/comments.service';
-import {PostsService} from './services/posts.service';
-
-
-// RouterModule.forRoot([
-//   {
-//     path: 'posts',
-//     component: AppComponent
-//   },
-//   {
-//     path: 'post/:id',
-//     component: PostDetailComponent
-//   }
-// ])
+import { CommentsService } from './services/comments.service';
+import { PostsService } from './services/posts.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsListComponent,
+    PostListComponent,
     CommentComponent,
     PostComponent,
     PostDetailComponent
   ],
   imports: [
     TransferHttpModule,
-    CommonModule
+    CommonModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: PostListComponent
+      },
+      {
+        path: 'post/:id',
+        component: PostDetailComponent
+      }
+    ])
   ],
   providers: [
     CommentsService,

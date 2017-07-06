@@ -5,10 +5,10 @@ import { PostsService } from '../services/posts.service';
 
 @Component({
   selector: 'app-posts-list',
-  templateUrl: './posts-list.component.html',
-  styleUrls: ['./posts-list.component.css']
+  templateUrl: './post-list.component.html',
+  styleUrls: ['./post-list.component.css']
 })
-export class PostsListComponent implements OnInit, OnDestroy {
+export class PostListComponent implements OnInit, OnDestroy {
 
   subscription;
   posts: Array<Post>;

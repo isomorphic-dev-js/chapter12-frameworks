@@ -6,6 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
+// From https://github.com/FrozenPandaz/ng-universal-demo
 var core_1 = require("@angular/core");
 var server_transfer_state_1 = require("./server-transfer-state");
 var transfer_state_1 = require("./transfer-state");
