@@ -1,5 +1,7 @@
 <div class="ui link items">
   {{#each model as |post|}}
-    {{post-component post=post limit=200}}
+    {{#link-to "post-detail" post.urlSlug}}
+      {{post-component post=post limit=200}}
+    {{/link-to}}
   {{/each}}
 </div>
