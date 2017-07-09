@@ -44,7 +44,7 @@ app.get('/posts', (req, res) => {
 app.get('/post/:slug', (req, res) => {
   readJSONFile('/posts', (err, data) => {
     const post = data.find((post) => {
-      return req.param.slug === post.urlSlug;
+      return req.params.slug === post.urlSlug;
     })
     res.send(post);
   });
@@ -54,7 +54,7 @@ app.get('/post/:id/comments', (req, res) => {
   readJSONFile('/comments', (err, data) => {
     const postComments = [];
     data.forEach((comment) => {
-      if (postComments.postId === req.param.id) {
+      if (comment.postId == req.params.id) {
         postComments.push(comment);
       }
     });
