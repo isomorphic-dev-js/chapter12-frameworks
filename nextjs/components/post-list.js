@@ -9,7 +9,7 @@ const PostList = (props) => {
     const postsArray = [];
     posts.forEach((post) => {
       postsArray.push(
-        <Post {...post} limit="250" />
+        <Post {...post} limit="200" />
       )
     });
     return postsArray;

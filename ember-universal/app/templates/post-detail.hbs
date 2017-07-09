@@ -1,1 +1,7 @@
 {{post-component post=model.post}}
+<div class="ui comments">
+  <h3 class="ui dividing header">Comments</h3>
+  {{#each model.comments as |comment|}}
+    {{comment-component comment=comment}}
+  {{/each}}
+</div>
