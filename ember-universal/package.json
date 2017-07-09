@@ -11,6 +11,7 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
+    "start-with-data": "pushd ../server && (npm start &) && popd && ember server",
     "start": "ember server",
     "test": "ember test"
   },
