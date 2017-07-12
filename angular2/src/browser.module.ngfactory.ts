@@ -33,20 +33,20 @@ export const AppBrowserModuleNgFactory:i0.NgModuleFactory<i1.AppBrowserModule> =
           i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i6.NgLocalization,i6.NgLocaleLocalization,
           [i0.LOCALE_ID]),i0.ɵmpd(5120,i0.IterableDiffers,i0.ɵk,([] as any[])),i0.ɵmpd(5120,
           i0.KeyValueDiffers,i0.ɵl,([] as any[])),i0.ɵmpd(4608,i7.DomSanitizer,i7.ɵe,
-          [i7.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,(null as any),[i7.DomSanitizer]),
+          [i6.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,(null as any),[i7.DomSanitizer]),
           i0.ɵmpd(4608,i7.HAMMER_GESTURE_CONFIG,i7.HammerGestureConfig,([] as any[])),
           i0.ɵmpd(5120,i7.EVENT_MANAGER_PLUGINS,(p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
             return [new i7.ɵDomEventsPlugin(p0_0),new i7.ɵKeyEventsPlugin(p1_0),new i7.ɵHammerGesturesPlugin(p2_0,
                 p2_1)];
-          },[i7.DOCUMENT,i7.DOCUMENT,i7.DOCUMENT,i7.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
+          },[i6.DOCUMENT,i6.DOCUMENT,i6.DOCUMENT,i7.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
               i7.EventManager,i7.EventManager,[i7.EVENT_MANAGER_PLUGINS,i0.NgZone]),
-          i0.ɵmpd(135680,i7.ɵDomSharedStylesHost,i7.ɵDomSharedStylesHost,[i7.DOCUMENT]),
+          i0.ɵmpd(135680,i7.ɵDomSharedStylesHost,i7.ɵDomSharedStylesHost,[i6.DOCUMENT]),
           i0.ɵmpd(4608,i7.ɵDomRendererFactory2,i7.ɵDomRendererFactory2,[i7.EventManager,
               i7.ɵDomSharedStylesHost]),i0.ɵmpd(6144,i0.RendererFactory2,(null as any),
               [i7.ɵDomRendererFactory2]),i0.ɵmpd(6144,i7.ɵSharedStylesHost,(null as any),
               [i7.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i0.Testability,i0.Testability,
-              [i0.NgZone]),i0.ɵmpd(4608,i7.Meta,i7.Meta,[i7.DOCUMENT]),i0.ɵmpd(4608,
-              i7.Title,i7.Title,[i7.DOCUMENT]),i0.ɵmpd(5120,i8.TransferState,i9.getTransferState,
+              [i0.NgZone]),i0.ɵmpd(4608,i7.Meta,i7.Meta,[i6.DOCUMENT]),i0.ɵmpd(4608,
+              i7.Title,i7.Title,[i6.DOCUMENT]),i0.ɵmpd(5120,i8.TransferState,i9.getTransferState,
               ([] as any[])),i0.ɵmpd(4608,i10.BrowserXhr,i10.BrowserXhr,([] as any[])),
           i0.ɵmpd(4608,i10.ResponseOptions,i10.BaseResponseOptions,([] as any[])),
           i0.ɵmpd(5120,i10.XSRFStrategy,i10.ɵb,([] as any[])),i0.ɵmpd(4608,i10.XHRBackend,
@@ -62,7 +62,7 @@ export const AppBrowserModuleNgFactory:i0.NgModuleFactory<i1.AppBrowserModule> =
               i12.ɵi,[i12.ɵg]),i0.ɵmpd(5120,i0.APP_BOOTSTRAP_LISTENER,(p0_0:any) => {
             return [p0_0];
           },[i12.ROUTER_INITIALIZER]),i0.ɵmpd(4608,i13.CommentsService,i13.CommentsService,
-              ([] as any[])),i0.ɵmpd(4608,i14.PostsService,i14.PostsService,[i11.TransferHttp]),
+              [i11.TransferHttp]),i0.ɵmpd(4608,i14.PostsService,i14.PostsService,[i11.TransferHttp]),
           i0.ɵmpd(512,i6.CommonModule,i6.CommonModule,([] as any[])),i0.ɵmpd(1024,
               i0.ErrorHandler,i7.ɵa,([] as any[])),i0.ɵmpd(1024,i0.NgProbeToken,() => {
             return [i12.ɵb()];
@@ -71,7 +71,7 @@ export const AppBrowserModuleNgFactory:i0.NgModuleFactory<i1.AppBrowserModule> =
               (null as any),[i0.APP_ID]),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,
               p0_1:any,p1_0:any,p2_0:any,p2_1:any,p2_2:any) => {
             return [i7.ɵc(p0_0,p0_1),i12.ɵh(p1_0),i7.ɵf(p2_0,p2_1,p2_2)];
-          },[[2,i7.NgProbeToken],[2,i0.NgProbeToken],i12.ɵg,i7.ɵTRANSITION_ID,i7.DOCUMENT,
+          },[[2,i7.NgProbeToken],[2,i0.NgProbeToken],i12.ɵg,i7.ɵTRANSITION_ID,i6.DOCUMENT,
               i0.Injector]),i0.ɵmpd(512,i0.ApplicationInitStatus,i0.ApplicationInitStatus,
               [[2,i0.APP_INITIALIZER]]),i0.ɵmpd(131584,i0.ɵe,i0.ɵe,[i0.NgZone,i0.ɵConsole,
               i0.Injector,i0.ErrorHandler,i0.ComponentFactoryResolver,i0.ApplicationInitStatus]),

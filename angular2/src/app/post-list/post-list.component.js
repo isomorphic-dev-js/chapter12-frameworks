@@ -17,7 +17,6 @@ var PostListComponent = (function () {
         var postsSub = this.postsService.getPosts();
         this.subscription = postsSub.subscribe(function (posts) {
             _this.posts = posts;
-            console.log("posts", _this.posts);
         });
     };
     PostListComponent.prototype.ngOnDestroy = function () {

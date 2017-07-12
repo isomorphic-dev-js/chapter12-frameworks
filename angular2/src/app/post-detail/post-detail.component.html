@@ -1,9 +1,9 @@
 <div class="ui main text container offset">
   <div class="ui segment items">
-    <!--<Post {...props.post} />-->
+    <app-post [post]="post"></app-post>
   </div>
   <div class="ui comments">
     <h3 class="ui dividing header">Comments</h3>
-    <!--{ comments(props.comments) }-->
+    <app-comment *ngFor="let comment of comments" [comment]="comment"></app-comment>
   </div>
 </div>

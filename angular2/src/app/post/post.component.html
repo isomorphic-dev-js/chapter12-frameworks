@@ -5,7 +5,7 @@
   <div class="content">
     <div class="header">{{post.title}}</div>
     <div class="description">
-      <p>{{post.body.slice(0, limit ? limit : post.body.length)}}</p>
+      <p>{{ post.body ? post.body.slice(0, limit ? limit : post.body.length) : "" }}</p>
     </div>
   </div>
 </div>

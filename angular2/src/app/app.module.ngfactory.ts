@@ -47,7 +47,7 @@ export const AppModuleNgFactory:i0.NgModuleFactory<i1.AppModule> = i0.ɵcmf(i1.A
               i0.APP_BOOTSTRAP_LISTENER,(p0_0:any) => {
                 return [p0_0];
               },[i10.ROUTER_INITIALIZER]),i0.ɵmpd(4608,i11.CommentsService,i11.CommentsService,
-              ([] as any[])),i0.ɵmpd(4608,i12.PostsService,i12.PostsService,[i7.TransferHttp]),
+              [i7.TransferHttp]),i0.ɵmpd(4608,i12.PostsService,i12.PostsService,[i7.TransferHttp]),
           i0.ɵmpd(512,i6.HttpModule,i6.HttpModule,([] as any[])),i0.ɵmpd(512,i13.TransferHttpModule,
               i13.TransferHttpModule,([] as any[])),i0.ɵmpd(512,i9.CommonModule,i9.CommonModule,
               ([] as any[])),i0.ɵmpd(1024,i10.ɵa,i10.ɵd,[[3,i10.Router]]),i0.ɵmpd(512,

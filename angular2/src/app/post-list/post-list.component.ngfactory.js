@@ -8,26 +8,40 @@
 exports.__esModule = true;
 var i0 = require("./post-list.component.css.shim.ngstyle");
 var i1 = require("@angular/core");
-var i2 = require("../post/post.component.ngfactory");
-var i3 = require("../post/post.component");
-var i4 = require("@angular/common");
-var i5 = require("./post-list.component");
-var i6 = require("../services/posts.service");
+var i2 = require("@angular/router");
+var i3 = require("@angular/common");
+var i4 = require("../post/post.component.ngfactory");
+var i5 = require("../post/post.component");
+var i6 = require("./post-list.component");
+var i7 = require("../services/posts.service");
 var styles_PostListComponent = [i0.styles];
 exports.RenderType_PostListComponent = i1.ɵcrt({ encapsulation: 0,
     styles: styles_PostListComponent, data: {} });
 function View_PostListComponent_1(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-post', [['limit',
-                '200']], null, null, null, i2.View_PostComponent_0, i2.RenderType_PostComponent)),
-        i1.ɵdid(49152, null, 0, i3.PostComponent, [], { post: [0, 'post'] }, null)], function (_ck, _v) {
-        var currVal_0 = _v.context.$implicit;
-        _ck(_v, 1, 0, currVal_0);
-    }, null);
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 8, 'div', [], null, null, null, null, null)), (_l()(),
+            i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵeld(0, null, null, 5, 'a', [], [[1, 'target', 0], [8, 'href', 4]], [[null, 'click']], function (_v, en, $event) {
+            var ad = true;
+            if (('click' === en)) {
+                var pd_0 = (i1.ɵnov(_v, 3).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
+                ad = (pd_0 && ad);
+            }
+            return ad;
+        }, null, null)), i1.ɵdid(671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, 'routerLink'] }, null), (_l()(), i1.ɵted(null, ['\n      '])), (_l()(), i1.ɵeld(0, null, null, 1, 'app-post', [['limit', '200']], null, null, null, i4.View_PostComponent_0, i4.RenderType_PostComponent)), i1.ɵdid(49152, null, 0, i5.PostComponent, [], { post: [0, 'post'] }, null),
+        (_l()(), i1.ɵted(null, ['\n    '])), (_l()(), i1.ɵted(null, ['\n  ']))], function (_ck, _v) {
+        var currVal_2 = i1.ɵinlineInterpolate(1, 'post/', _v.context.$implicit.urlSlug, '');
+        _ck(_v, 3, 0, currVal_2);
+        var currVal_3 = _v.context.$implicit;
+        _ck(_v, 6, 0, currVal_3);
+    }, function (_ck, _v) {
+        var currVal_0 = i1.ɵnov(_v, 3).target;
+        var currVal_1 = i1.ɵnov(_v, 3).href;
+        _ck(_v, 2, 0, currVal_0, currVal_1);
+    });
 }
 function View_PostListComponent_0(_l) {
     return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 4, 'div', [['class',
                 'ui link items']], null, null, null, null, null)),
-        (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_PostListComponent_1)), i1.ɵdid(802816, null, 0, i4.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n'])),
+        (_l()(), i1.ɵted(null, ['\n  '])), (_l()(), i1.ɵand(16777216, null, null, 1, null, View_PostListComponent_1)), i1.ɵdid(802816, null, 0, i3.NgForOf, [i1.ViewContainerRef, i1.TemplateRef, i1.IterableDiffers], { ngForOf: [0, 'ngForOf'] }, null), (_l()(), i1.ɵted(null, ['\n'])),
         (_l()(), i1.ɵted(null, ['\n']))], function (_ck, _v) {
         var _co = _v.component;
         var currVal_0 = _co.posts;
@@ -36,10 +50,10 @@ function View_PostListComponent_0(_l) {
 }
 exports.View_PostListComponent_0 = View_PostListComponent_0;
 function View_PostListComponent_Host_0(_l) {
-    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-posts-list', [], null, null, null, View_PostListComponent_0, exports.RenderType_PostListComponent)), i1.ɵdid(245760, null, 0, i5.PostListComponent, [i6.PostsService], null, null)], function (_ck, _v) {
+    return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, null, null, 1, 'app-posts-list', [], null, null, null, View_PostListComponent_0, exports.RenderType_PostListComponent)), i1.ɵdid(245760, null, 0, i6.PostListComponent, [i7.PostsService], null, null)], function (_ck, _v) {
         _ck(_v, 1, 0);
     }, null);
 }
 exports.View_PostListComponent_Host_0 = View_PostListComponent_Host_0;
-exports.PostListComponentNgFactory = i1.ɵccf('app-posts-list', i5.PostListComponent, View_PostListComponent_Host_0, {}, {}, []);
-//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9wb3N0LWxpc3QvcG9zdC1saXN0LmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9lbHlzZWtvbGtlci9kZXYvcGVyc29uYWwvY2hhcHRlci0xMi1mcmFtZXdvcmtzL2FuZ3VsYXIyL3NyYy9hcHAvcG9zdC1saXN0L3Bvc3QtbGlzdC5jb21wb25lbnQudHMiLCJuZzovLy9Vc2Vycy9lbHlzZWtvbGtlci9kZXYvcGVyc29uYWwvY2hhcHRlci0xMi1mcmFtZXdvcmtzL2FuZ3VsYXIyL3NyYy9hcHAvcG9zdC1saXN0L3Bvc3QtbGlzdC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9wb3N0LWxpc3QvcG9zdC1saXN0LmNvbXBvbmVudC50cy5Qb3N0TGlzdENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxkaXYgY2xhc3M9XCJ1aSBsaW5rIGl0ZW1zXCI+XG4gIDxhcHAtcG9zdCAqbmdGb3I9XCJsZXQgcG9zdCBvZiBwb3N0c1wiIFtwb3N0XT1cInBvc3RcIiBsaW1pdD1cIjIwMFwiPjwvYXBwLXBvc3Q+XG48L2Rpdj5cbiIsIjxhcHAtcG9zdHMtbGlzdD48L2FwcC1wb3N0cy1saXN0PiJdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQ0U7TUFBQTthQUFBO1VBQUE7SUFBcUM7SUFBckMsV0FBcUMsU0FBckM7Ozs7b0JBREY7TUFBQTtNQUEyQix5Q0FDekI7VUFBQSxnRUFBQTtVQUFBO1VBQUEsdUNBQTBFO01BQ3RFOztJQURNO0lBQVYsV0FBVSxTQUFWOzs7O29CQ0RGO01BQUE7a0NBQUEsVUFBQTtNQUFBO0lBQUE7Ozs7In0=
+exports.PostListComponentNgFactory = i1.ɵccf('app-posts-list', i6.PostListComponent, View_PostListComponent_Host_0, {}, {}, []);
+//# sourceMappingURL=data:application/json;base64,eyJmaWxlIjoiL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9wb3N0LWxpc3QvcG9zdC1saXN0LmNvbXBvbmVudC5uZ2ZhY3RvcnkudHMiLCJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJuZzovLy9Vc2Vycy9lbHlzZWtvbGtlci9kZXYvcGVyc29uYWwvY2hhcHRlci0xMi1mcmFtZXdvcmtzL2FuZ3VsYXIyL3NyYy9hcHAvcG9zdC1saXN0L3Bvc3QtbGlzdC5jb21wb25lbnQudHMiLCJuZzovLy9Vc2Vycy9lbHlzZWtvbGtlci9kZXYvcGVyc29uYWwvY2hhcHRlci0xMi1mcmFtZXdvcmtzL2FuZ3VsYXIyL3NyYy9hcHAvcG9zdC1saXN0L3Bvc3QtbGlzdC5jb21wb25lbnQuaHRtbCIsIm5nOi8vL1VzZXJzL2VseXNla29sa2VyL2Rldi9wZXJzb25hbC9jaGFwdGVyLTEyLWZyYW1ld29ya3MvYW5ndWxhcjIvc3JjL2FwcC9wb3N0LWxpc3QvcG9zdC1saXN0LmNvbXBvbmVudC50cy5Qb3N0TGlzdENvbXBvbmVudF9Ib3N0Lmh0bWwiXSwic291cmNlc0NvbnRlbnQiOlsiICIsIjxkaXYgY2xhc3M9XCJ1aSBsaW5rIGl0ZW1zXCI+XG4gIDxkaXYgKm5nRm9yPVwibGV0IHBvc3Qgb2YgcG9zdHNcIj5cbiAgICA8YSByb3V0ZXJMaW5rPVwicG9zdC97e3Bvc3QudXJsU2x1Z319XCI+XG4gICAgICA8YXBwLXBvc3QgW3Bvc3RdPVwicG9zdFwiIGxpbWl0PVwiMjAwXCIgPjwvYXBwLXBvc3Q+XG4gICAgPC9hPlxuICA8L2Rpdj5cbjwvZGl2PlxuIiwiPGFwcC1wb3N0cy1saXN0PjwvYXBwLXBvc3RzLWxpc3Q+Il0sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7b0JDQ0U7TUFBQSx3RUFBZ0M7YUFBQSw0QkFDOUI7TUFBQTtNQUFBO1FBQUE7UUFBQTtVQUFBO2NBQUE7VUFBQTtRQUFBO1FBQUE7TUFBQSx1Q0FBQTtNQUFBO01BQUEsZUFBc0MsNkNBQ3BDO01BQUE7TUFBQSwyRUFBQTtNQUFBO01BQWdELDJDQUM5Qzs7UUFGRDtZQUFBO1FBQUgsV0FBRyxTQUFIO1FBQ1k7UUFBVixXQUFVLFNBQVY7O1FBREY7UUFBQTtRQUFBLFdBQUEsbUJBQUE7Ozs7b0JBRko7TUFBQTtNQUEyQix5Q0FDekI7VUFBQSxnRUFBQTtVQUFBO1VBQUEsdUNBSU07TUFDRjs7SUFMQztJQUFMLFdBQUssU0FBTDs7OztvQkNERjtNQUFBO2tDQUFBLFVBQUE7TUFBQTtJQUFBOzs7OyJ9

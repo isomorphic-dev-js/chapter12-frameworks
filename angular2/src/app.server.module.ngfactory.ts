@@ -43,14 +43,14 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               i0.ɵm,[[3,i0.LOCALE_ID]]),i0.ɵmpd(4608,i8.NgLocalization,i8.NgLocaleLocalization,
               [i0.LOCALE_ID]),i0.ɵmpd(5120,i0.IterableDiffers,i0.ɵk,([] as any[])),
           i0.ɵmpd(5120,i0.KeyValueDiffers,i0.ɵl,([] as any[])),i0.ɵmpd(4608,i9.DomSanitizer,
-              i9.ɵe,[i9.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,(null as any),[i9.DomSanitizer]),
+              i9.ɵe,[i8.DOCUMENT]),i0.ɵmpd(6144,i0.Sanitizer,(null as any),[i9.DomSanitizer]),
           i0.ɵmpd(4608,i9.HAMMER_GESTURE_CONFIG,i9.HammerGestureConfig,([] as any[])),
           i0.ɵmpd(5120,i9.EVENT_MANAGER_PLUGINS,(p0_0:any,p1_0:any,p2_0:any,p2_1:any) => {
             return [new i9.ɵDomEventsPlugin(p0_0),new i9.ɵKeyEventsPlugin(p1_0),new i9.ɵHammerGesturesPlugin(p2_0,
                 p2_1)];
-          },[i9.DOCUMENT,i9.DOCUMENT,i9.DOCUMENT,i9.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
+          },[i8.DOCUMENT,i8.DOCUMENT,i8.DOCUMENT,i9.HAMMER_GESTURE_CONFIG]),i0.ɵmpd(4608,
               i9.EventManager,i9.EventManager,[i9.EVENT_MANAGER_PLUGINS,i0.NgZone]),
-          i0.ɵmpd(135680,i9.ɵDomSharedStylesHost,i9.ɵDomSharedStylesHost,[i9.DOCUMENT]),
+          i0.ɵmpd(135680,i9.ɵDomSharedStylesHost,i9.ɵDomSharedStylesHost,[i8.DOCUMENT]),
           i0.ɵmpd(4608,i9.ɵDomRendererFactory2,i9.ɵDomRendererFactory2,[i9.EventManager,
               i9.ɵDomSharedStylesHost]),i0.ɵmpd(4608,i7.ɵb,i7.ɵb,[i9.DOCUMENT,[2,i9.ɵTRANSITION_ID]]),
           i0.ɵmpd(6144,i9.ɵSharedStylesHost,(null as any),[i7.ɵb]),i0.ɵmpd(4608,i7.ɵServerRendererFactory2,
@@ -60,8 +60,8 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               i10.ɵAnimationEngine,i11.ɵb,[i10.AnimationDriver,i10.ɵAnimationStyleNormalizer]),
           i0.ɵmpd(5120,i0.RendererFactory2,i7.ɵa,[i7.ɵServerRendererFactory2,i10.ɵAnimationEngine,
               i0.NgZone]),i0.ɵmpd(4352,i0.Testability,(null as any),([] as any[])),
-          i0.ɵmpd(4608,i9.Meta,i9.Meta,[i9.DOCUMENT]),i0.ɵmpd(4608,i9.Title,i9.Title,
-              [i9.DOCUMENT]),i0.ɵmpd(4608,i12.AnimationBuilder,i11.ɵBrowserAnimationBuilder,
+          i0.ɵmpd(4608,i9.Meta,i9.Meta,[i8.DOCUMENT]),i0.ɵmpd(4608,i9.Title,i9.Title,
+              [i8.DOCUMENT]),i0.ɵmpd(4608,i12.AnimationBuilder,i11.ɵBrowserAnimationBuilder,
               [i0.RendererFactory2]),i0.ɵmpd(4608,i13.TransferState,i14.ServerTransferState,
               [i7.PlatformState,i0.RendererFactory2]),i0.ɵmpd(4608,i15.TransferHttp,
               i15.TransferHttp,[i6.Http,i13.TransferState]),i0.ɵmpd(5120,i16.ActivatedRoute,
@@ -74,7 +74,7 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               p1_1:any) => {
             return [p0_0,i1.onBootstrap(p1_0,p1_1)];
           },[i16.ROUTER_INITIALIZER,i0.ApplicationRef,i13.TransferState]),i0.ɵmpd(4608,
-              i17.CommentsService,i17.CommentsService,([] as any[])),i0.ɵmpd(4608,
+              i17.CommentsService,i17.CommentsService,[i15.TransferHttp]),i0.ɵmpd(4608,
               i18.PostsService,i18.PostsService,[i15.TransferHttp]),i0.ɵmpd(512,i6.HttpModule,
               i6.HttpModule,([] as any[])),i0.ɵmpd(512,i8.CommonModule,i8.CommonModule,
               ([] as any[])),i0.ɵmpd(1024,i0.ErrorHandler,i9.ɵa,([] as any[])),i0.ɵmpd(1024,
@@ -85,7 +85,7 @@ export const AppServerModuleNgFactory:i0.NgModuleFactory<i1.AppServerModule> = i
               (null as any),[i0.APP_ID]),i0.ɵmpd(1024,i0.APP_INITIALIZER,(p0_0:any,
               p0_1:any,p1_0:any,p2_0:any,p2_1:any,p2_2:any) => {
             return [i9.ɵc(p0_0,p0_1),i16.ɵh(p1_0),i9.ɵf(p2_0,p2_1,p2_2)];
-          },[[2,i9.NgProbeToken],[2,i0.NgProbeToken],i16.ɵg,i9.ɵTRANSITION_ID,i9.DOCUMENT,
+          },[[2,i9.NgProbeToken],[2,i0.NgProbeToken],i16.ɵg,i9.ɵTRANSITION_ID,i8.DOCUMENT,
               i0.Injector]),i0.ɵmpd(512,i0.ApplicationInitStatus,i0.ApplicationInitStatus,
               [[2,i0.APP_INITIALIZER]]),i0.ɵmpd(131584,i0.ɵe,i0.ɵe,[i0.NgZone,i0.ɵConsole,
               i0.Injector,i0.ErrorHandler,i0.ComponentFactoryResolver,i0.ApplicationInitStatus]),

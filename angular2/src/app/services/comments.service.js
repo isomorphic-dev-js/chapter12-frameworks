@@ -7,10 +7,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 var core_1 = require("@angular/core");
+var service = 'http://localhost:3535';
 var CommentsService = (function () {
-    function CommentsService() {
+    function CommentsService(http) {
+        this.http = http;
     }
     CommentsService.prototype.getCommentsForPost = function (postId) {
+        return this.http.get(service + "/post/" + postId + "/comments");
     };
     return CommentsService;
 }());
