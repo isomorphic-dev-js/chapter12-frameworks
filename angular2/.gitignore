@@ -41,7 +41,7 @@ testem.log
 .DS_Store
 Thumbs.db
 
-ngsummary
+src/**/*ngsummary*
 src/**/*.js
-ngfactory
-ngstyle
+src/**/*ngfactory*
+src/**/*ngstyle*
