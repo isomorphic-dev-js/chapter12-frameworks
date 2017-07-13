@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Post } from '../post';
-import { Comment } from '../comment';
+import { Post } from '../models/post';
+import { Comment } from '../models/comment';
 import { Observable } from 'rxjs/Observable';
 import { PostsService } from '../services/posts.service';
 import { CommentsService } from '../services/comments.service';
