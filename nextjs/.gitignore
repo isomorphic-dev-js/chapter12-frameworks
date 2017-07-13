@@ -1,0 +1,3 @@
+*.hot-update.*
+bundles/
+dist/

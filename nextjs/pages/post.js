@@ -42,15 +42,16 @@ const PostPage = (props) => {
   )
 }
 
-PostPage.getInitialProps = async ({ req }) => {
+PostPage.getInitialProps = async ({ req, query }) => {
 
-  if (!req) req = {
-    url: window.location.search
+  let id;
+  if(req) {
+    id = url.parse(req.url, true).query.id;
+  } else {
+    id = query.id;
   }
 
-  const queryParams = url.parse(req.url, true);
-
-  const resPost = await fetch(`http://localhost:3535/post/${queryParams.query.id}`);
+  const resPost = await fetch(`http://localhost:3535/post/${id}`);
   const post = await resPost.json()
 
   const resComments = await fetch(`http://localhost:3535/post/${post.id}/comments`);

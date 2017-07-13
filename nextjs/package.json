@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "data-server": "cd ../server && npm start && cd ../nextjs",
     "dev": "next",
     "build": "next build",
-    "start": "npm run data-server && next start"
+    "start": "next start"
   },
   "author": "",
   "license": "ISC",
