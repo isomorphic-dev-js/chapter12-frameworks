@@ -28,14 +28,19 @@ export class PostDetailComponent implements OnInit, OnDestroy {
     this.routeSubscription = this.route.params.subscribe(params => {
       const postsSub: Observable<any> = this.postsService.getPostByUrlSlug(params.id);
       this.postSubscription = postsSub.subscribe((post) => {
-        this.post = post;
-        console.log("post", this.post)
+        if (post.ok) {
+          this.post = post.json();
+        } else {
+          this.post = post;
+        }
         const commentsSub: Observable<any> = this.commentsService.getCommentsForPost(this.post.id);
         this.commentSubscription = commentsSub.subscribe((comments) => {
+          if (comments.ok){
+            this.comments = comments.json();
+          } else {
             this.comments = comments;
-            console.log("post", this.comments);
           }
-        );
+        });
       });
     });
   }
