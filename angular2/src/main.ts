@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 // angular
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 // app
-import { AppBrowserModule } from './browser.module';
+import { AppModule } from './app/app.module';
 
-platformBrowserDynamic().bootstrapModule(AppBrowserModule);
+platformBrowserDynamic().bootstrapModule(AppModule);
 
