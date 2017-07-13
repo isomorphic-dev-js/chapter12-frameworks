@@ -22,9 +22,12 @@ export class PostListComponent implements OnInit, OnDestroy {
   ngOnInit() {
     const postsSub: Observable<any> = this.postsService.getPosts();
     this.subscription = postsSub.subscribe((posts) => {
+      if (posts.ok) {
+        this.posts = posts.json();
+      } else {
         this.posts = posts;
       }
-    );
+    });
   }
 
   ngOnDestroy() {
