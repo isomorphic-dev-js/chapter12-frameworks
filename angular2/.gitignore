@@ -43,3 +43,5 @@ Thumbs.db
 
 ngsummary
 src/**/*.js
+ngfactory
+ngstyle
