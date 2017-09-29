@@ -1,8 +1,8 @@
 import 'reflect-metadata';
 import 'zone.js/dist/zone-node';
-import { platformServer, renderModuleFactory } from '@angular/platform-server'
-import { enableProdMode } from '@angular/core'
-import { AppServerModuleNgFactory } from './app.server.module.ngfactory'
+import { platformServer, renderModuleFactory } from '@angular/platform-server';
+import { enableProdMode } from '@angular/core';
+import { AppServerModuleNgFactory } from './app.server.module.ngfactory';
 import * as express from 'express';
 import { readFileSync } from 'fs';
 import { join } from 'path';
@@ -23,7 +23,7 @@ app.engine('html', (_, options, callback) => {
 });
 
 app.set('view engine', 'html');
-app.set('views', 'src')
+app.set('views', 'src');
 
 app.get('*.*', express.static(join(__dirname, '..', 'dist')));
 
