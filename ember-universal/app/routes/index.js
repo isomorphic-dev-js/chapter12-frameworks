@@ -4,7 +4,7 @@
   export default Ember.Route.extend({
     model() {
       return fetch('http://localhost:3535/posts')
-        .then(function(response) {
+        .then((response) => {
           return response;
         });
     }
