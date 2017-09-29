@@ -62,6 +62,8 @@ app.get('/post/:id/comments', (req, res) => {
   });
 });
 
+app.use(express.static(__dirname));
+
 app.use(function(req, res, next) {
   if (!req.route)
     return next (new Error('404'));
